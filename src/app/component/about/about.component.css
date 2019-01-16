@@ -1,0 +1,77 @@
+body {
+  background-color: white;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.col-6 {
+  padding: 2em;
+  text-align: justify;
+}
+
+.heading {
+  margin: 1em auto;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.portrait {
+  margin: 1em 0;
+  max-height: 500px;
+  margin: auto;
+  border: 1px solid #d9d9d9;
+}
+
+.about {
+  margin: 1em;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.row {
+  padding: 1em;
+  align-items: center;
+}
+
+.pic-bio {
+  margin: 2em auto 3em auto;
+  max-width: 1200px;
+}
+
+.info {
+  padding: 1em 0 2em 0;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* If device screen is smaller than 768px */
+@media (max-width: 768px) {
+  .bio {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 3em 0 0 0;
+  }
+
+  .pic-bio {
+    margin: 0 auto;
+  }
+
+  .info {
+    padding: 1em 0 3em 0;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+/* If device screen is bigger than 768px */
+@media (min-width: 768px) {
+  .bio {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 2em;
+    margin: 1em;
+  }
+}

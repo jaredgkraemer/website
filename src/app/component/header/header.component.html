@@ -1,0 +1,23 @@
+<nav [ngClass]="{'home-header': isHome, 'gallery-header': isGallery, 'about-header': isAbout}" class="navbar navbar-expand-md sticky-top">
+
+  <a class="navbar-brand" routerLink="home">
+    <img class="logo" src="../../../assets/graphics/logo.png">
+  </a>
+
+  <button class="custom-toggler navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#myNavList" aria-controls="myNavList" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse navbar-right" id="myNavList">
+    <div class="nav navbar-nav">
+
+      <a class="nav-item nav-link" routerLink="home" routerLinkActive="active">Home</a>
+      <a class="nav-item nav-link" routerLink="nature" routerLinkActive="active">Nature</a>
+      <a class="nav-item nav-link" routerLink="urban" routerLinkActive="active">Urban</a>
+      <a class="nav-item nav-link" routerLink="human" routerLinkActive="active">Human</a>
+      <a class="nav-item nav-link" routerLink="motion" routerLinkActive="active">Motion</a>
+      <a class="nav-item nav-link" routerLink="about" routerLinkActive="active">About</a>
+    </div>
+  </div>
+
+</nav>

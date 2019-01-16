@@ -1,0 +1,20 @@
+img {
+  cursor: pointer;
+  box-shadow: 0px 2px 6px #7a7a7a;
+}
+
+.row {
+  margin: 1em;
+  align-items: center;
+}
+
+.col {
+  transition-duration: 0.3s;
+  padding: 1em;
+}
+
+.col:hover {
+  transform: scale(1.05);
+  transition-duration: 0.3s;
+}
+

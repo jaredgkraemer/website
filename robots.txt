@@ -1,0 +1,5 @@
+# Jared G Kraemer Photography
+# https://www.jaredgkraemer.com -- Robots.txt
+
+User-agent: *
+Disallow:

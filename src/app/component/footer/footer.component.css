@@ -1,0 +1,47 @@
+footer {
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 3%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 12px;
+  letter-spacing: 6px;
+}
+
+.about-footer {
+  border: none;
+}
+
+.regular-footer {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.foot {
+  margin: 2em 0;
+  text-align: center;
+}
+
+.fa {
+  transition-duration: 1.5s;
+  text-decoration: none;
+}
+
+.fa:hover {
+  color: #d9d9d9;
+  transition-duration: 0.7s;
+  text-decoration: none;
+}
+
+.contact {
+  color: black;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+.contact:hover {
+  color: #d9d9d9;
+  transition-duration: 0.5s;
+  text-decoration: none;
+}
