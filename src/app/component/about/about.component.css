@@ -1,9 +1,9 @@
-body {
-  background-color: white;
+:host body {
+  background-color: white !important;
 }
 
 .white-bg {
-  background-color: white;
+  background-color: white !important;
 }
 
 .col-6 {

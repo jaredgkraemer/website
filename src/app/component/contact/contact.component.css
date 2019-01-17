@@ -1,0 +1,17 @@
+.about {
+  margin: 1em;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.info {
+  padding: 1em 0 2em 0;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.row {
+  padding: 1em;
+  align-items: center;
+}

@@ -25,6 +25,7 @@ import { PageNotFoundComponent } from './component/error/error.component';
 import { GalleryComponent } from './component/gallery/gallery.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { MotionComponent } from './component/motion/motion.component';
+import { ContactComponent } from './component/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { MotionComponent } from './component/motion/motion.component';
     PageNotFoundComponent,
     GalleryComponent,
     FooterComponent,
-    MotionComponent
+    MotionComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
