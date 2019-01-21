@@ -1,9 +1,5 @@
-:host body {
-  background-color: white !important;
-}
-
 .white-bg {
-  background-color: white !important;
+  background-color: white;
 }
 
 .col-6 {
@@ -37,7 +33,7 @@
 }
 
 .pic-bio {
-  margin: 2em auto 3em auto;
+  margin: 0 auto;
   max-width: 1200px;
 }
 

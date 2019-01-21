@@ -1,3 +1,10 @@
 .vimeo {
   margin: 2em 0;
 }
+
+@media(max-width: 576px) {
+  .container {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+}
