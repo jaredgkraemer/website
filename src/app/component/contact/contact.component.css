@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .contact {
   margin: 1em;
   text-align: center;
@@ -5,19 +9,57 @@
   letter-spacing: 1px;
 }
 
-.email {
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: 1px;
+.top {
+  font-size: 22px;
+  margin-bottom: 2em;
 }
 
-.info {
-  padding: 1em 0 2em 0;
-  margin: 0 auto;
-  align-items: center;
+.justify {
+  text-align: justify;
+}
+
+.list {
+  text-align: left;
+  margin: 1em;
+  padding: 0 0 0 20px;
+  list-style-type: circle;
 }
 
 .row {
   padding: 1em;
+  margin: 0 auto;
   align-items: center;
+}
+
+.email {
+  color: #007bff;
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+}
+
+.email:hover {
+  cursor: pointer;
+  color: #0056b3;
+}
+
+.copied {
+  color: #808080;
+  text-align: center;
+  font-size: 14px;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s, opacity 0.5s linear;
+}
+
+.visible {
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.license {
+  margin-top: 2em;
 }
