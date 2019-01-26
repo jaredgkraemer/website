@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 import { Lightbox } from 'ngx-lightbox';
 import { OrderService } from '../../service/order/order.service';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-gallery',
@@ -24,7 +24,14 @@ export class GalleryComponent implements OnInit {
     this.convert2DArray(this.album2D);
   }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.router.events.subscribe((event) => {
+      if (!(event instanceof NavigationEnd)) {
+          return;
+      }
+      window.scrollTo(0, 0)
+    });
+  }
 
   open(index: number) {
     this.lightbox.open(this.list, index);

@@ -23,9 +23,11 @@
   <div id="contact" class="info row">
     <div class="col">
       <h5 class="about">INFORMATION:</h5>
-      <h6 class="about">For inquires, please e-mail us at
-        <a class="contact" href="mailto:jaredgkraemer@gmail.com"> jaredgkraemer@gmail.com</a>
-      </h6>
+      <h6 class="about">For licensing & print inquires, please e-mail:</h6>
+      <div class="email-div">
+        <p class="email" (click)="emailCopied()">jaredgkraemer @ gmail . com</p>
+        <p class="copied" [ngClass]="{'visible': isCopied, 'hidden': !isCopied}">Copied!</p>
+      </div>
     </div>
   </div>
 </div>

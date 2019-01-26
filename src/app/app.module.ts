@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
 import { routes } from './routes';
 
 // Angular Bootstrap
-// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 
 // Lightbox
 import { LightboxModule } from 'ngx-lightbox';
@@ -41,7 +41,6 @@ import { MotionComponent } from './component/motion/motion.component';
     BrowserModule,
     BrowserAnimationsModule,
     LightboxModule,
-    // NgbModule.forRoot(),
     RouterModule.forRoot(routes)
   ],
   providers: [

@@ -1,9 +1,37 @@
-body {
+.white-bg {
   background-color: white;
 }
 
-.white-bg {
-  background-color: white;
+.email {
+  display: inline;
+  color: #0062cc;
+}
+
+.email:hover {
+  cursor: pointer;
+  color: #004288;
+}
+
+.copied {
+  display: inline;
+  font-size: 14px;
+  color: rgb(128, 128, 128);
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s, opacity 0.5s linear;
+}
+
+.visible {
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.email-div {
+  display: block;
+  text-align: center;
 }
 
 .col-6 {
