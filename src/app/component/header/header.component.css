@@ -92,6 +92,10 @@
     border-radius: 0;
     border: none;
   }
+
+  .dropdown-menu {
+    background-color: #e9ecef2e;
+  }
 }
 
 .dropdown .dropdown-menu {

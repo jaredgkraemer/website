@@ -7,6 +7,7 @@ a {
   text-align: center;
   text-decoration: none;
   letter-spacing: 1px;
+  font-weight: 400;
 }
 
 .top {
@@ -21,14 +22,20 @@ a {
 .list {
   text-align: left;
   margin: 1em;
-  padding: 0 0 0 20px;
-  list-style-type: circle;
+  padding: 0 0 0 10px;
+  list-style-type: none;
+}
+
+.fa {
+  margin: 0.5em 1em 0.5em 0;
+  font-size: 14px;
 }
 
 .row {
   padding: 1em;
   margin: 0 auto;
   align-items: center;
+  margin-bottom: 24px;
 }
 
 .email {
@@ -61,5 +68,10 @@ a {
 }
 
 .license {
-  margin-top: 2em;
+  margin: 2em;
+}
+
+.line {
+  border-top: 1px solid #dddddd;
+  margin-bottom: 2em;
 }
