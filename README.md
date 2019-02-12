@@ -2,8 +2,6 @@
 
 ## www.jaredgkraemer.com
 
-#
-
 ### Branching strategy: 
 
 master: should represent what is currently deployed.
