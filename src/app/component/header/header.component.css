@@ -24,7 +24,7 @@
   background-color: transparent;
 }
 
-/* If device screen is smaller than 768px 
+/* If device screen is smaller than 768px
  * Don't want it to be transparent if on mobile
  */
 @media (max-width: 768px) {
@@ -70,8 +70,9 @@
   letter-spacing: 0.1em;
 }
 
-.nav-item:hover {
-  color: #d9d9d9;
+.nav-item:hover,
+.nav-item:hover .fa {
+  color: #adadad;
   transition-duration: 0.7s;
   letter-spacing: 0.1em;
 }
@@ -84,4 +85,63 @@
 /* Hamburger */
 .navbar-toggler-icon {
   background-image: url('../../../assets/graphics/hamburger.svg');
+}
+
+@media (max-width: 768px) {
+  .dropdown .dropdown-menu {
+    border-radius: 0;
+    border: none;
+  }
+
+  .dropdown-menu {
+    background-color: #e9ecef2e;
+  }
+}
+
+.dropdown .dropdown-menu {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+
+  font-size: 14px;
+  display: block;
+  overflow: hidden;
+  border-radius: 0;
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu,
+.dropdown:hover .dropdown-menu {
+  left: -40px;
+  /* Moves dropdown menu left so it is center under gallery */
+  max-height: 400px;
+  opacity: 1;
+}
+
+.dropdown-item {
+  text-align: center;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: transparent;
+  transition: all 0.3s ease-out;
+}
+
+.dropdown-divider {
+  margin: 0.2rem 0;
+}
+
+.fa {
+  font-size: 16px;
+  margin: 0 0 0 0.5rem;
 }

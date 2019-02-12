@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
 import { routes } from './routes';
 
 // Angular Bootstrap
-// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 
 // Lightbox
 import { LightboxModule } from 'ngx-lightbox';
@@ -23,8 +23,12 @@ import { HomeComponent } from './component/home/home.component';
 import { AboutComponent } from './component/about/about.component';
 import { PageNotFoundComponent } from './component/error/error.component';
 import { GalleryComponent } from './component/gallery/gallery.component';
+import { GalleryPageComponent } from './component/gallery-page/gallery-page.component';
+import { GalleryTitleComponent } from './component/gallery-title/gallery-title.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { MotionComponent } from './component/motion/motion.component';
+import { ContactComponent } from './component/contact/contact.component';
+import { EventsComponent } from './component/events/events.component';
 
 @NgModule({
   declarations: [
@@ -35,13 +39,16 @@ import { MotionComponent } from './component/motion/motion.component';
     PageNotFoundComponent,
     GalleryComponent,
     FooterComponent,
-    MotionComponent
+    MotionComponent,
+    ContactComponent,
+    EventsComponent,
+    GalleryPageComponent,
+    GalleryTitleComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     LightboxModule,
-    // NgbModule.forRoot(),
     RouterModule.forRoot(routes)
   ],
   providers: [

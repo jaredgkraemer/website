@@ -1,10 +1,7 @@
-<div class="container-fluid container-width">
-  <div class="text-container"><h4 class="title title-spacing">{{title | uppercase}}</h4></div>
-  <div class="row">
-    <div *ngFor="let row of album2D" class="row">
-      <div *ngFor="let img of row" class="col">
-        <img class="image d-block img-fluid" src="{{img.src}}" (click)="open(img.index)">
-      </div>
+<div class="row">
+  <div *ngFor="let row of album2D" class="row">
+    <div *ngFor="let img of row" class="col">
+      <img class="image d-block img-fluid" src="{{img.src}}" (click)="open(img.index)">
     </div>
   </div>
 </div>

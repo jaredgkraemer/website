@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { nature, urban, human } from '../../model/image-list';
+import { nature, urban, human, events } from '../../model/image-list';
 
 @Injectable()
 export class OrderService {
@@ -17,6 +17,8 @@ export class OrderService {
       order = urban;
     } else if (route === '/human') {
       order = human;
+    } else if (route === '/events') {
+      order = events;
     }
 
     for (let i = 0; i < order.length; i++) {
