@@ -8,25 +8,31 @@ import { Component, OnInit } from '@angular/core';
 export class ContactComponent implements OnInit {
 
   isCopied:boolean = false;
+  isMobile:boolean = false;
 
-  constructor() { }
+  constructor() {
+    if (navigator.userAgent.match(/iPad|iPod|iPhone|Android|BlackBerry|Opera Mini|IEMobile/i)) {
+      this.isMobile = true;
+    }
+  }
 
   ngOnInit() { }
-  
+
   emailCopied() {
-    this.isCopied = true;
-    console.log("isCopied:", this.isCopied);
+    if (!this.isMobile) {
+      this.isCopied = true;
 
-    var cpy = function(e: ClipboardEvent) {
-      e.preventDefault();
-      e.clipboardData.setData('text/plain', "jaredgkraemer@gmail.com");
+      var cpy = function(e: ClipboardEvent) {
+        e.preventDefault();
+        e.clipboardData.setData('text/plain', "jaredgkraemer@gmail.com");
+      }
+
+      document.addEventListener('copy', cpy);
+      document.execCommand('copy');
+      document.removeEventListener('copy', cpy);
+
+      setTimeout(() => { this.isCopied = false; console.log("isCopied:", this.isCopied); }, 2000);
     }
-
-    document.addEventListener('copy', cpy);
-    document.execCommand('copy');
-    document.removeEventListener('copy', cpy);
-
-    setTimeout(() => { this.isCopied = false; console.log("isCopied:", this.isCopied); }, 2000);
   }
 
 }

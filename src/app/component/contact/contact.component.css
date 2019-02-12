@@ -38,11 +38,14 @@ a {
   margin-bottom: 24px;
 }
 
-.email {
+.email, .mobile-email {
   color: #007bff;
-  text-align: center;
   font-size: 24px;
   margin: 0;
+}
+
+.email-wrapper {
+  text-align: center;
 }
 
 .email:hover {

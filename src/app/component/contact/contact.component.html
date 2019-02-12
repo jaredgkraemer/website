@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col">
       <h4 class="contact">For all booking, licensing & print inquires, please e-mail:</h4>
-      <p class="email" (click)="emailCopied()">jaredgkraemer&nbsp;@&nbsp;gmail&nbsp;.&nbsp;com</p>
+      <p class="email-wrapper"><span [ngClass]="{'mobile-email': isMobile, 'email': !isMobile}" (click)="emailCopied()">jaredgkraemer&nbsp;@&nbsp;gmail&nbsp;.&nbsp;com</span></p>
       <p class="copied" [ngClass]="{'visible': isCopied, 'hidden': !isCopied}">Copied e-mail!</p>
 
       <div class="line"></div>
