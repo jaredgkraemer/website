@@ -24,14 +24,14 @@ export class ContactComponent implements OnInit {
 
       var cpy = function(e: ClipboardEvent) {
         e.preventDefault();
-        e.clipboardData.setData('text/plain', "jaredgkraemer@gmail.com");
+        e.clipboardData.setData('text/plain', 'jaredgkraemer@gmail.com');
       }
 
       document.addEventListener('copy', cpy);
       document.execCommand('copy');
       document.removeEventListener('copy', cpy);
 
-      setTimeout(() => { this.isCopied = false; console.log("isCopied:", this.isCopied); }, 2000);
+      setTimeout(() => { this.isCopied = false; }, 2000);
     }
   }
 

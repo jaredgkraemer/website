@@ -20,6 +20,7 @@ export const nature: string[][] = [
 ];
 
 export const urban: string[][] = [
+  ['20'],
   ['1'],
   ['4', '5'],
   ['19'],
