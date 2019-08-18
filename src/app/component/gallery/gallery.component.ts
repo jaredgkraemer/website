@@ -18,7 +18,7 @@ export class GalleryComponent implements OnInit {
     private orderService: OrderService,
     private router: Router
   ) {
-    this.album2D = orderService.getOrder(router.url);
+    this.album2D = this.orderService.getOrder(router.url);
     this.convert2DArray(this.album2D);
   }
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'footer',
@@ -19,9 +20,9 @@ export class FooterComponent implements OnInit {
   ngOnInit() { }
 
   setPage() {
-    this.router.events
-      .filter(event => event instanceof NavigationEnd)
-      .subscribe((event: NavigationEnd) => {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+      ).subscribe((event: NavigationEnd) => {
         if (event.url === '/about') {
           this.isAbout = true;
         } else {
