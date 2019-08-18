@@ -1,9 +1,8 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <h4 class="contact">For all booking, licensing & print inquires, please e-mail:</h4>
-      <p class="email-wrapper"><span [ngClass]="{'mobile-email': isMobile, 'email': !isMobile}" (click)="emailCopied()">jaredgkraemer&nbsp;@&nbsp;gmail&nbsp;.&nbsp;com</span></p>
-      <p class="copied" [ngClass]="{'visible': isCopied, 'hidden': !isCopied}">Copied e-mail!</p>
+      <h4 class="contact">For all booking, licensing & print inquires</h4>
+      <div class="contact-btn-wrapper"><button (click)="mail()" type="button" class="btn btn-dark">CONTACT</button></div>
 
       <div class="line"></div>
 
