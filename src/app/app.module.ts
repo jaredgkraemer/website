@@ -29,6 +29,7 @@ import { FooterComponent } from './component/footer/footer.component';
 import { MotionComponent } from './component/motion/motion.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { EventsComponent } from './component/events/events.component';
+import { NewHeaderComponent } from './component/new-header/new-header.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { EventsComponent } from './component/events/events.component';
     ContactComponent,
     EventsComponent,
     GalleryPageComponent,
-    GalleryTitleComponent
+    GalleryTitleComponent,
+    NewHeaderComponent
   ],
   imports: [
     BrowserModule,
