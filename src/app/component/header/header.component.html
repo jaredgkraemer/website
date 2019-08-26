@@ -1,36 +1,19 @@
-<nav [ngClass]="{'home-header': isHome, 'gallery-header': isGallery, 'about-header': isAbout}" class="navbar navbar-expand-md sticky-top">
+<div class="header" [ngClass]="{ home: isHome }">
 
-  <a class="navbar-brand" routerLink="home">
-    <img class="logo" src="../../../assets/graphics/logo.png">
-  </a>
-
-  <button class="custom-toggler navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#myNavList" aria-controls="myNavList" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse navbar-right" id="myNavList">
-    <div class="nav navbar-nav font">
-
-      <a class="nav-item nav-link" routerLink="home" routerLinkActive="active">Home</a>
-
-      <div class="dropdown show nav-item">
-        <a class="nav-item nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Gallery<i class="fa fa-angle-down"></i>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="nav-item nav-link dropdown-item" routerLink="nature" routerLinkActive="active">Nature</a>
-          <a class="nav-item nav-link dropdown-item" routerLink="urban" routerLinkActive="active">Urban</a>
-          <a class="nav-item nav-link dropdown-item" routerLink="human" routerLinkActive="active">Human</a>
-          <div class="dropdown-divider"></div>
-          <a class="nav-item nav-link dropdown-item" routerLink="events" routerLinkActive="active">Events</a>
-          <div class="dropdown-divider"></div>
-          <a class="nav-item nav-link dropdown-item" routerLink="motion" routerLinkActive="active">Motion</a>
-        </div>
-      </div>
-
-      <a class="nav-item nav-link" routerLink="contact" routerLinkActive="active">Contact</a>
-      <a class="nav-item nav-link" routerLink="about" routerLinkActive="active">About</a>
+  <div class="logo-container">
+    <img class="logo" src="../../../assets/graphics/logo.png" />
+    <div (click)="menu()" class="hamburger">
+      <div class="patty top"></div>
+      <div class="patty bottom"></div>
     </div>
   </div>
 
-</nav>
+  <div class="link-container collapse">
+    <div (click)="menu()" class="link-text" [routerLink]="['/home']" routerLinkActive="active">HOME</div>
+    <div class="divider"></div>
+    <div (click)="menu()" class="link-text" [routerLink]="['/portfolio']" routerLinkActive="active">PORTFOLIO</div>
+    <div class="divider"></div>
+    <div (click)="menu()" class="link-text" [routerLink]="['/contact']" routerLinkActive="active">CONTACT</div>
+  </div>
+
+</div>

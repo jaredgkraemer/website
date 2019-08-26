@@ -1,0 +1,199 @@
+@import '../../../swatches.scss';
+@import '../../../breakpoints.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: calc((100vw / 4) + 2.5rem);
+  background-color: $white;
+  transition: all 0.5s ease-in-out;
+  transition: height 0.1s ease-in-out;
+  box-shadow: 0 1px 15px #999;
+
+  @include custom(336) {
+    height: 5rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  @include md {
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.home {
+  transition: all 0.5s ease-in-out;
+  background-color: $white;
+  box-shadow: none;
+
+  @include md {
+    transition: all 0.5s ease-in-out;
+    background-color: $white-40p;
+  }
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: inherit;
+  border-bottom: 1px solid $gray-90;
+
+  @include custom(336) {
+    flex-direction: row;
+  }
+
+  @include md {
+    border-bottom: none;
+  }
+}
+
+.logo {
+  height: calc(100vw / 4);
+  width: 100%;
+  padding: 0.25rem 0;
+  transition: all 0.1s ease-in-out;
+
+  @include custom(336) {
+    height: 4rem;
+    width: 16rem;
+    padding: 0 0.5rem;
+    transition: all 0.1s ease-in-out;
+  }
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  padding: 0 0 1rem 0;
+
+  @include custom(336) {
+    padding: 0 1rem;
+  }
+
+  @include md {
+    display: none;
+  }
+}
+
+.patty {
+  background-color: $gray-10;
+  height: 0.25rem;
+  width: 2rem;
+  transition: all 0.3s ease;
+}
+
+.patty.top {
+  margin-bottom: 0.5rem;
+}
+
+.toggle .top {
+  transform: translate(0rem, 0.375rem) rotate(-45deg);
+}
+
+.toggle .bottom {
+  transform: translate(0rem, -0.375rem) rotate(45deg);
+}
+
+.link-container {
+  position: relative;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: $white;
+  z-index: 3;
+
+  @include md {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 1rem;
+    width: calc(100% - 2rem);
+    height: 5rem;
+    z-index: 3;
+    background-color: transparent;
+  }
+}
+
+.collapse {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+
+  @include md {
+    max-height: none;
+    overflow: unset;
+    transition: none;
+  }
+}
+
+.show {
+  max-height: 10rem;
+  height: calc(3 * 3rem + 3px);
+  transition: all 0.4s ease-in-out;
+
+  @include md {
+    max-height: none;
+    height: 5rem;
+  }
+}
+
+.link-text {
+  border: none;
+  margin: 0;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  line-height: 1rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    font-weight 0.25s ease-in-out;
+
+  @include md {
+    width: unset;
+    border: 1px solid $gray-10;
+    padding: 0.25rem 0.5rem;
+    margin-left: 1.5rem;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+      font-weight 0.25s ease-in-out;
+  }
+
+  &.active {
+    color: $gray-10;
+    background-color: $white;
+    font-weight: bold;
+
+    @include md {
+      color: $white;
+      background-color: $gray-10;
+      font-weight: normal;
+    }
+  }
+
+  &:hover {
+    color: $gray-10;
+    background-color: $gray-95;
+
+    @include md {
+      color: $white;
+      background-color: $gray-10;
+    }
+  }
+
+}
+
+.divider {
+  width: 100%;
+  border-bottom: 1px solid $gray-95;
+
+  @include md {
+    display: none;
+  }
+}

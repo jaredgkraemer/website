@@ -5,51 +5,69 @@ import { LightboxConfig } from 'ngx-lightbox';
 import { map, filter } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-root',
+  selector: 'root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-
-  name = 'Jared G Kraemer Photography';
+  name: string = 'Jared G Kraemer Photography';
+  isHome: boolean = false;
 
   constructor(
+    public router: Router,
     private activatedRoute: ActivatedRoute,
-    private router: Router,
     private title: Title,
     private lightboxConfig: LightboxConfig
   ) {
-    lightboxConfig.fadeDuration = 0.1;
-    lightboxConfig.resizeDuration = 0.1;
-    lightboxConfig.showImageNumberLabel = true;
-    lightboxConfig.alwaysShowNavOnTouchDevices = true;
-    lightboxConfig.wrapAround = true;
+    this.lightboxConfig.fadeDuration = 0.1;
+    this.lightboxConfig.resizeDuration = 0.1;
+    this.lightboxConfig.showImageNumberLabel = true;
+    this.lightboxConfig.alwaysShowNavOnTouchDevices = true;
+    this.lightboxConfig.wrapAround = true;
 
     this.setTitleToRouteData();
   }
 
-  ngOnInit() { }
+  ngOnInit() {}
 
   setTitleToRouteData() {
-    this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd),
-      map(() => {
-        let child = this.activatedRoute.firstChild;
-        while (child) {
-          if (child.firstChild) {
-            child = child.firstChild;
-          } else if (child.snapshot.data && child.snapshot.data['page']) {
-            return child.snapshot.data['page'];
-          } else {
-            return null;
+    this.router.events
+      .pipe(
+        filter(event => event instanceof NavigationEnd),
+        map(() => {
+          let child = this.activatedRoute.firstChild;
+          while (child) {
+            if (child.firstChild) {
+              child = child.firstChild;
+            } else if (child.snapshot.data && child.snapshot.data['page']) {
+              return child.snapshot.data['page'];
+            } else {
+              return null;
+            }
           }
-        }
-        return null;
-      }),)
+          return null;
+        })
+      )
       .subscribe((page: string) => {
-        const newTitle = page == 'Home' ? this.name : this.name + ' // ' + page;
+        let newTitle: string;
+        if (page === 'Home') {
+          newTitle = this.name;
+          this.isHome = true;
+        } else {
+          newTitle = this.name + ' // ' + page;
+          this.isHome = false;
+        }
         this.title.setTitle(newTitle);
       });
   }
 
+  // this.router.events.pipe(
+  //   filter(event => event instanceof NavigationEnd)
+  //   ).subscribe((event: NavigationEnd) => {
+  //     if (event.url === '/about') {
+  //       this.isAbout = true;
+  //     } else {
+  //       this.isAbout = false;
+  //     }
+  //   });
 }

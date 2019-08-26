@@ -1,0 +1,13 @@
+<div class="container portfolio">
+  <div class="row">
+    <div *ngFor="let category of categories; index as i" class="col">
+      <div class="category-container">
+        <span class="strip">{{categories[i] | uppercase}}</span>
+      </div>
+      <div class="category-container reveal">
+        <a class="strip" href="/{{categories[i]}}">{{categories[i] | uppercase}}</a>
+      </div>
+      <img class="category" src="../../assets/images/{{categories[i]}}/1.jpg" />
+    </div>
+  </div>
+</div>

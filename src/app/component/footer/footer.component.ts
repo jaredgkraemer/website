@@ -5,19 +5,20 @@ import { filter } from 'rxjs/operators';
 @Component({
   selector: 'footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css']
+  styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
 
-  copyrightYear: string;
+  year: string;
   isAbout = true;
 
   constructor(private router: Router) {
-    this.copyrightYear = new Date().getFullYear().toString();
-    this.setPage();
+    this.year = new Date().getFullYear().toString();
   }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.setPage();
+  }
 
   setPage() {
     this.router.events.pipe(

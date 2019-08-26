@@ -1,0 +1,104 @@
+@import '../../../breakpoints.scss';
+@import '../../../swatches.scss';
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 1rem 0;
+  width: 100%;
+
+  @include md {
+    flex-direction: row;
+    margin: 0 0 2rem 0;
+  }
+}
+
+.col {
+  position: relative;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: calc(100vw - 4rem);
+  margin: 0 0 1rem 0;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 6px #7a7a7a;
+
+  @include xs {
+    height: $max-width-xs - 4rem;
+  }
+
+  @include sm {
+    height: $max-width-sm - 4rem;
+  }
+
+  @include md {
+    height: ($max-width-md - 10rem) / 3;
+    margin: 0 3em 0 0;
+  }
+
+  @include lg {
+    height: ($max-width-lg - 10rem) / 3;
+  }
+
+  @include xl {
+    height: ($max-width-xl - 10rem) / 3;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.category-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1rem;
+  padding: 1rem;
+  max-width: 6em;
+  border: 2px solid $gray-10;
+  color: $gray-90;
+  mix-blend-mode: multiply;
+  border-radius: 2px;
+  background-color: $gray-10;
+  opacity: 1;
+
+  &:hover {
+    opacity: 0;
+  }
+}
+
+.category {
+  object-fit: cover;
+  width: 100%;
+}
+
+.strip {
+  color: inherit;
+}
+
+.reveal {
+  mix-blend-mode: normal;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+  }
+}

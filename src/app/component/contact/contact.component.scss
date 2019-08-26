@@ -1,0 +1,56 @@
+@import '../../../swatches.scss';
+
+.contact-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+}
+
+.contact-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.contact-btn {
+  padding: 1rem 2rem;
+  background-color: $gray-30;
+  color: $white;
+  text-align: center;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-btn:hover {
+  background-color: $gray-20;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-btn:active {
+  background-color: $black;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.line {
+  border-top: 1px solid #dddddd;
+  margin-bottom: 2rem;
+}
+
+.license {
+  text-align: justify;
+  padding: 0 1rem;
+  margin: 0 0 1rem 0;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+
+.list {
+  text-align: left;
+  list-style-type: none;
+}

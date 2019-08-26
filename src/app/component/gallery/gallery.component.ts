@@ -6,7 +6,7 @@ import { OrderService } from '../../service/order/order.service';
 @Component({
   selector: 'gallery',
   templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.css']
+  styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent implements OnInit {
 
