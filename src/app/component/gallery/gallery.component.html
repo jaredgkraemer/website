@@ -1,7 +1,5 @@
-<div class="row">
-  <div *ngFor="let row of album2D" class="row">
-    <div *ngFor="let img of row" class="col">
-      <img class="image d-block img-fluid" src="{{img.src}}" (click)="open(img.index)">
-    </div>
+<div *ngFor="let row of album2D" class="gallery-row">
+  <div *ngFor="let img of row" class="gallery-col">
+    <img src="{{ img.src }}" (click)="open(img.index)" />
   </div>
 </div>

@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-.row {
+.portfolio-row {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +24,15 @@
   }
 }
 
-.col {
+.portfolio-col {
   position: relative;
   display: flex;
-  text-align: center;
   width: 100%;
   height: calc(100vw - 4rem);
   margin: 0 0 1rem 0;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 2px 6px #7a7a7a;
+  cursor: pointer;
 
   @include xs {
     height: $max-width-xs - 4rem;
@@ -58,6 +58,11 @@
   &:last-child {
     margin: 0;
   }
+
+  &:hover {
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+  }
 }
 
 .category-container {
@@ -65,18 +70,34 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  line-height: 1rem;
-  padding: 1rem;
-  max-width: 6em;
-  border: 2px solid $gray-10;
+  line-height: 1.5rem;
+  padding: 0.5rem;
+  max-width: 4em;
   color: $gray-90;
   mix-blend-mode: multiply;
-  border-radius: 2px;
+  border-radius: 1px;
   background-color: $gray-10;
   opacity: 1;
+  transition: all 0.3s ease-in-out;
+
+  @include xs {
+    max-width: 6em;
+    font-size: 3rem;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  @include md {
+    max-width: 4em;
+    font-size: 2rem;
+  }
+
+  @include lg {
+    max-width: 6em;
+    font-size: 3rem;
+  }
 
   &:hover {
     opacity: 0;
@@ -88,11 +109,7 @@
   width: 100%;
 }
 
-.strip {
-  color: inherit;
-}
-
-.reveal {
+.reveal-category {
   mix-blend-mode: normal;
   transition: all 0.3s ease-in-out;
   opacity: 0;

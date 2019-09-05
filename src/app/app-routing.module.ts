@@ -16,7 +16,6 @@ const routes: Routes = [
   { path: 'human', component: GalleryPageComponent, data: { page: 'Human'} },
   { path: 'events', component: EventsComponent, data: { page: 'Events'} },
   { path: 'motion', component: MotionComponent, data: { page: 'Motion'} },
-  { path: 'about', component: AboutComponent, data: { page: 'About'} },
   { path: 'contact', component: ContactComponent, data: { page: 'Contact'} },
   { path: 'portfolio', component: PortfolioComponent, data: { page: 'Portfolio'} },
   { path: '', redirectTo: '/home', pathMatch: 'full', data: { page: 'Home'} },

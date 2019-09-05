@@ -1,19 +1,36 @@
+@import '../../../scss/breakpoints.scss';
+
 img {
   cursor: pointer;
   box-shadow: 0px 2px 6px #7a7a7a;
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 
-.row {
-  margin: 1em;
-  align-items: center;
+.gallery-row {
+  display: flex;
+  margin-bottom: 2rem;
+
+  @include md {
+    margin-bottom: 4rem;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.col {
-  transition-duration: 0.3s;
-  padding: 1em;
-}
+.gallery-col {
+  display: flex;
+  margin: 0 1rem;
 
-.col:hover {
-  transform: scale(1.05);
-  transition-duration: 0.3s;
+  @include md {
+    margin: 0 2rem;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+  }
 }

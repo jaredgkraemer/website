@@ -1,7 +1,7 @@
 @import '../../../scss/swatches.scss';
 @import '../../../scss/breakpoints.scss';
 
-.container {
+.about {
   margin-top: 4rem;
 }
 
@@ -14,9 +14,22 @@
 
 .heading {
   padding: 0.25rem 1rem;
+  margin: 0 1rem;
   text-align: center;
   font-size: 2rem;
   border: 2px solid $gray-10;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include lg {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .profile {
@@ -35,28 +48,28 @@
   }
 }
 
-.about-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  @include lg {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
 .about-text {
-  margin: 0 4rem;
+  margin: 0 2rem;
   font-weight: lighter;
   line-height: 1.5rem;
   letter-spacing: 1px;
 
+  @include sm {
+    margin: 0 4rem;
+  }
+
   @include lg {
-    margin: 2rem;
+    margin: 0;
     font-weight: lighter;
     line-height: 1.5rem;
     letter-spacing: 1px;
+  }
+
+  & p {
+    margin: 1rem 2rem;
+  }
+
+  & p:first-child {
+    margin-top: 0;
   }
 }

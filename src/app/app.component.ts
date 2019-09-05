@@ -60,14 +60,4 @@ export class AppComponent implements OnInit {
         this.title.setTitle(newTitle);
       });
   }
-
-  // this.router.events.pipe(
-  //   filter(event => event instanceof NavigationEnd)
-  //   ).subscribe((event: NavigationEnd) => {
-  //     if (event.url === '/about') {
-  //       this.isAbout = true;
-  //     } else {
-  //       this.isAbout = false;
-  //     }
-  //   });
 }

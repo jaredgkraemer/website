@@ -1,4 +1,5 @@
-<div class="container-fluid container-width">
+<div class="responsive-container gallery">
   <gallery-title></gallery-title>
   <gallery></gallery>
+  <div *ngIf="showScrollToTop" (click)="scrollToTop()" class="top">TOP</div>
 </div>

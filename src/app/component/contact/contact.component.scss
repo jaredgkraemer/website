@@ -10,13 +10,14 @@
   font-size: 1.5rem;
 }
 
-.contact-btn-wrapper {
+.contact-btn-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .contact-btn {
+  font-size: 1rem;
   padding: 1rem 2rem;
   background-color: $gray-30;
   color: $white;
@@ -37,14 +38,18 @@
   transition: background-color 0.1s ease-in-out;
 }
 
-.line {
-  border-top: 1px solid #dddddd;
-  margin-bottom: 2rem;
+.divider-container {
+  padding: 0 2rem;
+  margin-bottom: 4rem;
+}
+
+.contact-divider {
+  border-bottom: 1px solid $gray-80;
 }
 
 .license {
   text-align: justify;
-  padding: 0 1rem;
+  padding: 0 2rem;
   margin: 0 0 1rem 0;
   letter-spacing: 1px;
   font-weight: lighter;

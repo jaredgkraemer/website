@@ -13,7 +13,8 @@ export class CarouselComponent implements OnInit, AfterViewInit {
   timer: NodeJS.Timer;
   counter: number = 1;
   width: number = 0;
-  TIME_DELAY: number = 3500;
+  timeDelay: number = 3500;
+  isAnimating = false;
 
   constructor() {}
 
@@ -31,7 +32,9 @@ export class CarouselComponent implements OnInit, AfterViewInit {
   }
 
   arrowClick(direction: string) {
-    if (this.counter > this.images.length - 2 || this.counter <= 0) return;
+    if (this.counter > this.images.length - 2 || this.counter <= 0) {
+      return;
+    }
 
     if (direction === 'next') {
       this.counter++;
@@ -58,7 +61,7 @@ export class CarouselComponent implements OnInit, AfterViewInit {
   }
 
   transform() {
-    let size = -this.width * this.counter;
+    const size = -this.width * this.counter;
     this.carousel.style.transform = 'translateX(' + size + 'px)';
   }
 
@@ -72,18 +75,12 @@ export class CarouselComponent implements OnInit, AfterViewInit {
 
   indicatorClick(index: number) {
     if (index !== this.counter) {
-      if (index === 1 && this.counter === this.images.length - 2) {
-        this.arrowClick('next');
-      } else if (index === this.images.length - 2 && this.counter === 1) {
-        this.arrowClick('prev');
-      } else {
-        this.toggleIndicator(this.counter);
-        this.counter = index;
-        this.transition();
-        this.transform();
-        this.toggleIndicator(index);
-        this.resetTimer();
-      }
+      this.toggleIndicator(this.counter);
+      this.counter = index;
+      this.transition();
+      this.transform();
+      this.toggleIndicator(index);
+      this.resetTimer();
     }
   }
 
@@ -114,7 +111,7 @@ export class CarouselComponent implements OnInit, AfterViewInit {
   setTimer() {
     this.timer = setInterval(() => {
       this.arrowClick('next');
-    }, this.TIME_DELAY);
+    }, this.timeDelay);
   }
 
   resetTimer() {

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { nature } from '../../model/image-list';
 
 @Component({
   selector: 'portfolio',
@@ -6,13 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-  categories: string[] = ['nature', 'urban', 'human'];
+  categories: string[][] = [['nature','urban'], ['motion'], ['human', 'events']];
+  thumbnails: any = {
+    nature: '1',
+    urban: '1',
+    human: '3',
+    events: '4',
+    motion: '1'
+  };
 
-  constructor() {}
+  constructor(private router: Router) {}
 
-  ngOnInit() {
-    // setInterval(() => {
-    //   this.categories.push(this.categories.shift());
-    // }, 2000);
+  ngOnInit() {}
+
+  categoryClick(link: string) {
+    this.router.navigateByUrl(`/${link}`);
   }
 }

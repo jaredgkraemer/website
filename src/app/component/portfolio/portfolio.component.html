@@ -1,13 +1,15 @@
-<div class="container portfolio">
-  <div class="row">
-    <div *ngFor="let category of categories; index as i" class="col">
-      <div class="category-container">
-        <span class="strip">{{categories[i] | uppercase}}</span>
+<div class="responsive-container portfolio">
+  <div *ngFor="let row of categories; index as i" class="portfolio-row">
+    <ng-container *ngFor="let category of row">
+      <div (click)="categoryClick(category)" class="portfolio-col">
+        <div class="category-container">{{ category | uppercase }}</div>
+        <div class="category-container reveal-category">{{ category | uppercase }}</div>
+        <img *ngIf="category === 'nature'" class="category" src="../../assets/images/{{ category }}/{{ thumbnails.nature }}.jpg" />
+        <img *ngIf="category === 'urban'" class="category" src="../../assets/images/{{ category }}/{{ thumbnails.urban }}.jpg" />
+        <img *ngIf="category === 'human'" class="category" src="../../assets/images/{{ category }}/{{ thumbnails.human }}.jpg" />
+        <img *ngIf="category === 'events'" class="category" src="../../assets/images/{{ category }}/{{ thumbnails.events }}.jpg" />
+        <img *ngIf="category === 'motion'" class="category" src="../../assets/images/{{ category }}/{{ thumbnails.motion }}.gif" />
       </div>
-      <div class="category-container reveal">
-        <a class="strip" href="/{{categories[i]}}">{{categories[i] | uppercase}}</a>
-      </div>
-      <img class="category" src="../../assets/images/{{categories[i]}}/1.jpg" />
-    </div>
+    </ng-container>
   </div>
 </div>

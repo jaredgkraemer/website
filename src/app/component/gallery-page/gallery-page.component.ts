@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'gallery-page',
@@ -6,10 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gallery-page.component.scss']
 })
 export class GalleryPageComponent implements OnInit {
+  showScrollToTop: boolean = false;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    this.scrollToTop();
   }
 
+  scrollToTop() {
+    window.scroll({ top: 0, behavior: 'smooth' });
+  }
+
+  @HostListener('window:scroll', [])
+  onScroll(): void {
+    window.scrollY > window.innerWidth
+      ? (this.showScrollToTop = true)
+      : (this.showScrollToTop = false);
+  }
 }
