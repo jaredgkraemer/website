@@ -8,7 +8,7 @@
   <div class="indicators">
     <div *ngFor="let img of images; index as i" (click)="indicatorClick(i)" class="index"></div>
   </div>
-  <div class="carousel" (transitionend)="transitionEnd($event)">
+  <div class="carousel" (transitionend)="transitionEnd()">
     <img *ngFor="let img of images; index as i" class="slide" src="../../../assets/images/home/{{ images[i] }}-16x9.jpg" />
   </div>
 </div>
