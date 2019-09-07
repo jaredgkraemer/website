@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'nature', component: GalleryPageComponent, data: { page: 'Nature'} },
   { path: 'urban', component: GalleryPageComponent, data: { page: 'Urban'} },
   { path: 'human', component: GalleryPageComponent, data: { page: 'Human'} },
+  { path: 'space', component: GalleryPageComponent, data: { page: 'Space'} },
   { path: 'events', component: EventsComponent, data: { page: 'Events'} },
   { path: 'motion', component: MotionComponent, data: { page: 'Motion'} },
   { path: 'contact', component: ContactComponent, data: { page: 'Contact'} },

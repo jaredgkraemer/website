@@ -19,7 +19,7 @@
 .contact-btn {
   font-size: 1rem;
   padding: 1rem 2rem;
-  background-color: $gray-30;
+  background-color: $btn;
   color: $white;
   text-align: center;
   border: none;
@@ -29,12 +29,12 @@
 }
 
 .contact-btn:hover {
-  background-color: $gray-20;
+  background-color: $btn-hover;
   transition: background-color 0.3s ease-in-out;
 }
 
 .contact-btn:active {
-  background-color: $black;
+  background-color: $btn-active;
   transition: background-color 0.1s ease-in-out;
 }
 
@@ -53,6 +53,10 @@
   margin: 0 0 1rem 0;
   letter-spacing: 1px;
   font-weight: lighter;
+}
+
+.contact-link {
+  color: $blue-80;
 }
 
 .list {

@@ -30,8 +30,18 @@
     margin: 0 1rem;
   }
 
-  &:hover {
-    color: $gray-80;
+  &.linkedin:hover {
+    color: $linkedin;
+    transition-duration: 0.5s;
+  }
+
+  &.youtube:hover {
+    color: $youtube;
+    transition-duration: 0.5s;
+  }
+
+  &.instagram:hover {
+    color: $instagram;
     transition-duration: 0.5s;
   }
 }

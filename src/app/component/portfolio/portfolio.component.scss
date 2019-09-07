@@ -15,7 +15,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 0 1rem 0;
+  margin: 0 0 2rem 0;
   width: 100%;
 
   @include md {
@@ -29,9 +29,9 @@
   display: flex;
   width: 100%;
   height: calc(100vw - 4rem);
-  margin: 0 0 1rem 0;
+  margin: 0 0 2rem 0;
   transition: all 0.2s ease-in-out;
-  box-shadow: 0 2px 6px #7a7a7a;
+  box-shadow: 0 2px 6px $shadow;
   cursor: pointer;
 
   @include xs {
@@ -76,10 +76,11 @@
   padding: 0.5rem;
   max-width: 4em;
   color: $gray-90;
-  mix-blend-mode: multiply;
+  mix-blend-mode: normal;
   border-radius: 1px;
   background-color: $gray-10;
   opacity: 1;
+  z-index: 1;
   transition: all 0.3s ease-in-out;
 
   @include xs {
@@ -90,17 +91,32 @@
   }
 
   @include md {
+    mix-blend-mode: multiply;
     max-width: 4em;
     font-size: 2rem;
+
+    &:hover {
+      opacity: 0;
+    }
   }
 
   @include lg {
     max-width: 6em;
     font-size: 3rem;
   }
+}
 
-  &:hover {
+.reveal-category {
+  @include md {
+    mix-blend-mode: normal;
+    transition: all 0.3s ease-in-out;
     opacity: 0;
+    z-index: 1;
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      opacity: 1;
+    }
   }
 }
 
@@ -109,13 +125,7 @@
   width: 100%;
 }
 
-.reveal-category {
-  mix-blend-mode: normal;
-  transition: all 0.3s ease-in-out;
-  opacity: 0;
-
-  &:hover {
-    transition: all 0.3s ease-in-out;
-    opacity: 1;
-  }
+.video {
+  object-fit: cover;
+  width: 100%;
 }

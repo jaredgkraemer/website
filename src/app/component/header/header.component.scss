@@ -10,7 +10,7 @@
   background-color: $white;
   transition: all 0.5s ease-in-out;
   transition: height 0.1s ease-in-out;
-  box-shadow: 0 1px 15px #999;
+  box-shadow: 0 0 10px $shadow;
 
   @include custom(336) {
     height: 5rem;

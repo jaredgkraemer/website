@@ -36,7 +36,7 @@
   margin: 0 2rem 4rem 2rem;
   height: auto;
   width: 75%;
-  border: 1px solid #d9d9d9;
+  border: 1px solid $gray-80;
 
   @include md {
     max-height: 384px;

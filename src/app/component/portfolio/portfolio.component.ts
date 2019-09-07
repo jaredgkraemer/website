@@ -8,13 +8,14 @@ import { nature } from '../../model/image-list';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-  categories: string[][] = [['nature','urban'], ['motion'], ['human', 'events']];
+  categories: string[][] = [['nature','urban'], ['human', 'events', 'space'], ['motion']];
   thumbnails: any = {
     nature: '1',
     urban: '1',
-    human: '3',
+    human: '2',
     events: '4',
-    motion: '1'
+    motion: '1',
+    space: '28',
   };
 
   constructor(private router: Router) {}
