@@ -1,0 +1,80 @@
+@import '../../../scss/breakpoints.scss';
+
+.vimeo {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+  padding: 0 1rem;
+
+  @include sm {
+    margin: 1rem 0;
+  }
+
+  @include md {
+    margin: 2rem 0;
+  }
+}
+
+.ratio {
+  &-21x9 {
+    height: 116px;
+    width: 270px;
+    transition: all 0.3s ease-in-out;
+
+    @include xs {
+      height: 154px;
+      width: 360px;
+    }
+
+    @include sm {
+      height: 206px;
+      width: 480px;
+    }
+
+    @include md {
+      height: 274px;
+      width: 640px;
+    }
+
+    @include lg {
+      height: 309px;
+      width: 720px;
+    }
+
+    @include xl {
+      height: 411px;
+      width: 960px;
+    }
+  }
+
+  &-16x9 {
+    height: 152px;
+    width: 270px;
+    transition: all 0.3s ease-in-out;
+
+    @include xs {
+      height: 203px;
+      width: 360px;
+    }
+
+    @include sm {
+      height: 270px;
+      width: 480px;
+    }
+
+    @include md {
+      height: 360px;
+      width: 640px;
+    }
+
+    @include lg {
+      height: 405px;
+      width: 720px;
+    }
+
+    @include xl {
+      height: 540px;
+      width: 960px;
+    }
+  }
+}

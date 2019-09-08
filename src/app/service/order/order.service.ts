@@ -1,24 +1,31 @@
 import { Injectable } from '@angular/core';
-import { nature, urban, human, events } from '../../model/image-list';
+import { nature, urban, human, events, space } from '../../model/image-list';
 
 @Injectable()
 export class OrderService {
-
-  constructor() { }
+  constructor() {}
 
   getOrder(route: string): any[][] {
     const album: any[][] = [[]];
     let order: string[][] = [[]];
     let counter = 0;
 
-    if (route === '/nature') {
-      order = nature;
-    } else if (route === '/urban') {
-      order = urban;
-    } else if (route === '/human') {
-      order = human;
-    } else if (route === '/events') {
-      order = events;
+    switch (route) {
+      case '/nature':
+        order = nature;
+        break;
+      case '/human':
+        order = human;
+        break;
+      case '/urban':
+        order = urban;
+        break;
+      case '/events':
+        order = events;
+        break;
+      case '/space':
+        order = space;
+        break;
     }
 
     for (let i = 0; i < order.length; i++) {
@@ -38,5 +45,4 @@ export class OrderService {
 
     return album;
   }
-
 }

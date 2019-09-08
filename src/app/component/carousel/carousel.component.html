@@ -1,0 +1,14 @@
+<div class="carousel-container">
+  <div class="carousel-btn prev" (click)="arrowClick('prev')">
+    <i class="icon-chevron-left"></i>
+  </div>
+  <div class="carousel-btn next" (click)="arrowClick('next')">
+    <i class="icon-chevron-right"></i>
+  </div>
+  <div class="indicators">
+    <div *ngFor="let img of images; index as i" (click)="indicatorClick(i)" class="index"></div>
+  </div>
+  <div class="carousel" (transitionend)="transitionEnd()">
+    <img *ngFor="let img of images; index as i" class="slide" src="../../../assets/images/home/{{ images[i] }}-16x9.jpg" />
+  </div>
+</div>

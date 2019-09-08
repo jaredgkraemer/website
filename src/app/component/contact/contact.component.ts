@@ -1,14 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollService } from '../../service/scroll/scroll.service';
 
 @Component({
-  selector: 'app-contact',
+  selector: 'contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  constructor() {}
+  constructor(public scroll: ScrollService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.scroll.scrollToTop();
+  }
 
   mail() {
     const name = 'jaredgkraemer';

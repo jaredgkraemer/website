@@ -2,13 +2,9 @@
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 
 // Routing
-import { routes } from './routes';
-
-// Angular Bootstrap
-// import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+import { AppRoutingModule } from './app-routing.module';
 
 // Lightbox
 import { LightboxModule } from 'ngx-lightbox';
@@ -28,7 +24,8 @@ import { GalleryTitleComponent } from './component/gallery-title/gallery-title.c
 import { FooterComponent } from './component/footer/footer.component';
 import { MotionComponent } from './component/motion/motion.component';
 import { ContactComponent } from './component/contact/contact.component';
-import { EventsComponent } from './component/events/events.component';
+import { PortfolioComponent } from './component/portfolio/portfolio.component';
+import { CarouselComponent } from './component/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -41,15 +38,16 @@ import { EventsComponent } from './component/events/events.component';
     FooterComponent,
     MotionComponent,
     ContactComponent,
-    EventsComponent,
     GalleryPageComponent,
-    GalleryTitleComponent
+    GalleryTitleComponent,
+    PortfolioComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     LightboxModule,
-    RouterModule.forRoot(routes)
+    AppRoutingModule
   ],
   providers: [
     Title,

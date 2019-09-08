@@ -1,0 +1,131 @@
+@import '../../../scss/breakpoints.scss';
+@import '../../../scss/swatches.scss';
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.portfolio-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 2rem 0;
+  width: 100%;
+
+  @include md {
+    flex-direction: row;
+    margin: 0 0 2rem 0;
+  }
+}
+
+.portfolio-col {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: calc(100vw - 4rem);
+  margin: 0 0 2rem 0;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 6px $shadow;
+  cursor: pointer;
+
+  @include xs {
+    height: $max-width-xs - 4rem;
+  }
+
+  @include sm {
+    height: $max-width-sm - 4rem;
+  }
+
+  @include md {
+    height: ($max-width-md - 10rem) / 3;
+    margin: 0 3em 0 0;
+  }
+
+  @include lg {
+    height: ($max-width-lg - 10rem) / 3;
+  }
+
+  @include xl {
+    height: ($max-width-xl - 10rem) / 3;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+  }
+}
+
+.category-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  padding: 0.5rem;
+  max-width: 4em;
+  color: $gray-90;
+  mix-blend-mode: normal;
+  border-radius: 1px;
+  background-color: $gray-10;
+  opacity: 1;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+
+  @include xs {
+    max-width: 6em;
+    font-size: 3rem;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  @include md {
+    mix-blend-mode: multiply;
+    max-width: 4em;
+    font-size: 2rem;
+
+    &:hover {
+      opacity: 0;
+    }
+  }
+
+  @include lg {
+    max-width: 6em;
+    font-size: 3rem;
+  }
+}
+
+.reveal-category {
+  @include md {
+    mix-blend-mode: normal;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    z-index: 1;
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      opacity: 1;
+    }
+  }
+}
+
+.category {
+  object-fit: cover;
+  width: 100%;
+}
+
+.video {
+  object-fit: cover;
+  width: 100%;
+}

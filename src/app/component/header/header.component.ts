@@ -1,42 +1,40 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
-import { filter } from 'rxjs/operators';
+import { Component, OnInit, AfterViewInit, HostListener, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, AfterViewInit {
+  hamburger: Element;
+  links: Element;
+  width: number = 0;
+  @Input() isHome: boolean;
 
-  isHome = true;
-  isGallery = true;
-  isAbout = true;
+  constructor(public router: Router) {}
 
-  constructor(private router: Router) {
-    this.setPage();
+  ngOnInit() {}
+
+  ngAfterViewInit() {
+    this.hamburger = document.querySelector('.hamburger');
+    this.links = document.querySelector('.link-container');
   }
 
-  ngOnInit() { }
-
-  setPage() {
-    this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd))
-      .subscribe((event: NavigationEnd) => {
-        if (event.url === '/home' || event.url === '/') {
-          this.isHome = true;
-          this.isAbout = false;
-          this.isGallery = false;
-        } else if (event.url === '/about') {
-          this.isHome = false;
-          this.isAbout = true;
-          this.isGallery = false;
-        } else {
-          this.isHome = false;
-          this.isAbout = false;
-          this.isGallery = true;
-        }
-      });
+  menu() {
+    this.hamburger.classList.toggle('toggle');
+    this.links.classList.toggle('show');
   }
 
+  home() {
+    this.router.navigateByUrl('/home');
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onWindowResize(event) {
+    this.width = event.target.innerWidth;
+    if (this.width > 768 && this.hamburger.classList.contains('toggle')) {
+      this.menu();
+    }
+  }
 }

@@ -1,11 +1,15 @@
-<div [ngClass]="{'about-footer': isAbout, 'regular-footer': !isAbout}" class="footer container-fluid text-center">
-  <div class="row">
-    <div class="col-lg-12">
-      <a href="https://www.instagram.com/jaredgkraemer" target="_blank" class="fa fa-instagram"></a>
-      <a href="https://www.linkedin.com/in/jaredgkraemer/" target="_blank" class="fa fa-linkedin"></a>
-      <a href="https://www.youtube.com/user/JKraemerProductions" target="_blank" class="fa fa-youtube"></a>
-    </div>
+<div class="footer">
+  <div class="footer-link-container">
+    <a class="footer-link instagram" href="https://www.instagram.com/jaredgkraemer" target="_blank">
+      <span class="icon-instagram"></span>
+    </a>
+    <a class="footer-link linkedin" href="https://www.linkedin.com/in/jaredgkraemer" target="_blank">
+      <span class="icon-linkedin"></span>
+    </a>
+    <a class="footer-link youtube" href="https://www.youtube.com/user/JKraemerProductions" target="_blank">
+      <span class="icon-youtube"></span>
+    </a>
   </div>
-  <p class="foot font">JARED G KRAEMER PHOTOGRAPHY</p>
-  <p class="foot font">COPYRIGHT © {{copyrightYear}}</p>
+  <p class="footer-text">JARED G KRAEMER PHOTOGRAPHY</p>
+  <p class="footer-text">COPYRIGHT © {{ year }}</p>
 </div>

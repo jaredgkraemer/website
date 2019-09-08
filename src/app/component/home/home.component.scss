@@ -1,0 +1,15 @@
+@import '../../../scss/breakpoints.scss';
+
+.home-container {
+  margin-top: calc((100vw / 4) + 2.5rem);
+
+  @include custom(336) {
+    margin-top: 5rem;
+  }
+
+  @include md {
+    margin-top: 0;
+  }
+}
+
+// width: -moz-available; /* WebKit-based browsers will ignore this. */

@@ -1,0 +1,75 @@
+@import '../../../scss/swatches.scss';
+@import '../../../scss/breakpoints.scss';
+
+.about {
+  margin-top: 4rem;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.heading {
+  padding: 0.25rem 1rem;
+  margin: 0 1rem;
+  text-align: center;
+  font-size: 2rem;
+  border: 2px solid $gray-10;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include lg {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.profile {
+  margin: 0 2rem 4rem 2rem;
+  height: auto;
+  width: 75%;
+  border: 1px solid $gray-80;
+
+  @include md {
+    max-height: 384px;
+    width: auto;
+  }
+
+  @include lg {
+    margin: 0 2rem;
+  }
+}
+
+.about-text {
+  margin: 0 2rem;
+  font-weight: lighter;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+
+  @include sm {
+    margin: 0 4rem;
+  }
+
+  @include lg {
+    margin: 0;
+    font-weight: lighter;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  & p {
+    margin: 1rem 2rem;
+  }
+
+  & p:first-child {
+    margin-top: 0;
+  }
+}

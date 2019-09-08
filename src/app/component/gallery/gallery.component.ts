@@ -6,10 +6,9 @@ import { OrderService } from '../../service/order/order.service';
 @Component({
   selector: 'gallery',
   templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.css']
+  styleUrls: ['./gallery.component.scss'],
 })
 export class GalleryComponent implements OnInit {
-
   list: any[] = []; /* list of image objects for lightbox indexing */
   album2D: any[][] = [[]]; /* 2D array of image objects */
 
@@ -22,12 +21,7 @@ export class GalleryComponent implements OnInit {
     this.convert2DArray(this.album2D);
   }
 
-  ngOnInit() {
-    this.router.events.subscribe((event) => {
-      if (!(event instanceof NavigationEnd)) { return; }
-      window.scrollTo(0, 0); /* scrolls to top of screen on new page load */
-    });
-  }
+  ngOnInit() {}
 
   open(index: number) {
     this.lightbox.open(this.list, index);
@@ -40,5 +34,4 @@ export class GalleryComponent implements OnInit {
       }
     }
   }
-
 }
