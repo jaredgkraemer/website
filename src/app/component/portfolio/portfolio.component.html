@@ -9,7 +9,7 @@
         <img *ngIf="category === 'human'" class="category" src="../../assets/images/{{ category }}/{{ thumbnails.human }}.jpg" />
         <img *ngIf="category === 'events'" class="category" src="../../assets/images/{{ category }}/{{ thumbnails.events }}.jpg" />
         <img *ngIf="category === 'space'" class="category" src="../../assets/images/{{ category }}/{{ thumbnails.space }}.jpg" />
-        <video *ngIf="category === 'motion'" class="video" autoplay loop>
+        <video *ngIf="category === 'motion'" class="video" autoplay loop muted playsinline>
           <source src="../../assets/images/{{ category }}/{{ thumbnails.motion }}.mp4" type="video/mp4">
         </video>
       </div>

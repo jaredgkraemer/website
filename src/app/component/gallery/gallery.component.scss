@@ -1,22 +1,9 @@
 @import '../../../scss/breakpoints.scss';
 @import '../../../scss/swatches.scss';
 
-img {
-  cursor: pointer;
-  box-shadow: 0px 2px 6px $shadow;
-  max-width: 100%;
-  display: block;
-  height: auto;
-  transition: box-shadow 0.2s ease-in-out;
-
-  &:hover {
-    transition: box-shadow 0.2s ease-in-out;
-    box-shadow: 0px 2px 18px $shadow-light;
-  }
-}
-
 .gallery-row {
   display: flex;
+  align-items: center;
   margin-bottom: 2rem;
 
   @include md {
@@ -29,7 +16,8 @@ img {
 }
 
 .gallery-col {
-  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
   margin: 0 1rem;
   transition-duration: 0.3s;
 
@@ -40,5 +28,19 @@ img {
   &:hover {
     transform: scale(1.05);
     transition-duration: 0.3s;
+  }
+}
+
+img {
+  cursor: pointer;
+  box-shadow: 0px 2px 6px $shadow;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: 0px 2px 18px $shadow-light;
   }
 }

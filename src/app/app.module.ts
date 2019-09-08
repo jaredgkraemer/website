@@ -24,7 +24,6 @@ import { GalleryTitleComponent } from './component/gallery-title/gallery-title.c
 import { FooterComponent } from './component/footer/footer.component';
 import { MotionComponent } from './component/motion/motion.component';
 import { ContactComponent } from './component/contact/contact.component';
-import { EventsComponent } from './component/events/events.component';
 import { PortfolioComponent } from './component/portfolio/portfolio.component';
 import { CarouselComponent } from './component/carousel/carousel.component';
 
@@ -39,7 +38,6 @@ import { CarouselComponent } from './component/carousel/carousel.component';
     FooterComponent,
     MotionComponent,
     ContactComponent,
-    EventsComponent,
     GalleryPageComponent,
     GalleryTitleComponent,
     PortfolioComponent,

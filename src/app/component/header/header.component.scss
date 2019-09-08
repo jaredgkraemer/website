@@ -55,6 +55,7 @@
   width: 100%;
   padding: 0.25rem 0;
   transition: all 0.1s ease-in-out;
+  z-index: 4;
 
   @include custom(336) {
     height: 4rem;
@@ -67,10 +68,10 @@
 .hamburger {
   display: block;
   cursor: pointer;
-  padding: 0 0 1rem 0;
+  padding: 0 1rem 1rem 1rem;
 
   @include custom(336) {
-    padding: 0 1rem;
+    padding: 1rem;
   }
 
   @include md {
@@ -82,7 +83,7 @@
   background-color: $gray-10;
   height: 0.25rem;
   width: 2rem;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .patty.top {

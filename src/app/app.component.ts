@@ -3,6 +3,7 @@ import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { LightboxConfig } from 'ngx-lightbox';
 import { map, filter } from 'rxjs/operators';
+import smoothscroll from 'smoothscroll-polyfill';
 
 @Component({
   selector: 'root',
@@ -28,7 +29,9 @@ export class AppComponent implements OnInit {
     this.setTitleToRouteData();
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    smoothscroll.polyfill(); /* smooth scrolling on iPhone */
+  }
 
   setTitleToRouteData() {
     this.router.events

@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit, HostListener, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'header',
@@ -11,7 +12,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   width: number = 0;
   @Input() isHome: boolean;
 
-  constructor() {}
+  constructor(public router: Router) {}
 
   ngOnInit() {}
 
@@ -23,6 +24,10 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   menu() {
     this.hamburger.classList.toggle('toggle');
     this.links.classList.toggle('show');
+  }
+
+  home() {
+    this.router.navigateByUrl('/home');
   }
 
   @HostListener('window:resize', ['$event'])

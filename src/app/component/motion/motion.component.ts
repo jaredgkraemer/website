@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollService } from '../../service/scroll/scroll.service';
 
 @Component({
   selector: 'motion',
@@ -7,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MotionComponent implements OnInit {
 
-  constructor() { }
+  constructor(public scroll: ScrollService) {}
 
-  ngOnInit() { }
-
+  ngOnInit() {
+    this.scroll.scrollToTop();
+  }
 }

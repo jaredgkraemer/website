@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { nature } from '../../model/image-list';
+import { ScrollService } from '../../service/scroll/scroll.service';
 
 @Component({
   selector: 'portfolio',
@@ -18,9 +18,11 @@ export class PortfolioComponent implements OnInit {
     space: '28',
   };
 
-  constructor(private router: Router) {}
+  constructor(public router: Router, public scroll: ScrollService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.scroll.scrollToTop();
+  }
 
   categoryClick(link: string) {
     this.router.navigateByUrl(`/${link}`);

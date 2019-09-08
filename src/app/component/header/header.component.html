@@ -1,7 +1,9 @@
 <div class="header" [ngClass]="{ home: isHome }">
 
   <div class="logo-container">
-    <img class="logo" src="../../../assets/graphics/logo.png" />
+    <a href="home">
+      <img class="logo" src="../../../assets/graphics/logo.png" />
+    </a>
     <div (click)="menu()" class="hamburger">
       <div class="patty top"></div>
       <div class="patty bottom"></div>

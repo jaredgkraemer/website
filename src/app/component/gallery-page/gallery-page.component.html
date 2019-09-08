@@ -1,5 +1,9 @@
 <div class="responsive-container gallery">
   <gallery-title></gallery-title>
+  <p *ngIf="isEvents" class="events-description">
+    From 100+ person weddings to graduations and family photos, Jared G. Kraemer
+    will deliver exceptional, high quality photographs everytime.
+  </p>
   <gallery></gallery>
-  <div *ngIf="showScrollToTop" (click)="scrollToTop()" class="top">TOP</div>
+  <div *ngIf="showScrollToTop" (click)="scroll.scrollToTop()" class="scroll-top">TOP</div>
 </div>

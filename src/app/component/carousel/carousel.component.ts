@@ -3,7 +3,7 @@ import { Component, OnInit, HostListener, AfterViewInit } from '@angular/core';
 @Component({
   selector: 'carousel',
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.scss']
+  styleUrls: ['./carousel.component.scss'],
 })
 export class CarouselComponent implements OnInit, AfterViewInit {
   /* List of picture filenames, have to duplicate first and last to wrap around */
@@ -119,9 +119,20 @@ export class CarouselComponent implements OnInit, AfterViewInit {
     this.setTimer();
   }
 
+  isMobile(): boolean {
+    let mobile = new RegExp(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i);
+    if (mobile.test(navigator.userAgent)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   @HostListener('window:resize', ['$event'])
   onWindowResize(event) {
-    this.width = event.target.innerWidth;
+    if (!this.isMobile()) {
+      this.width = event.target.innerWidth;
+    }
     this.transition('none');
     this.transform();
   }
