@@ -1,21 +1,21 @@
 <div class="header" [ngClass]="{ home: isHome }">
 
   <div class="logo-container">
-    <a href="home">
+    <a class="logo-link" aria-label="Home link" routerLink="/home">
       <img class="logo" src="../../../assets/graphics/logo.png" />
     </a>
-    <div (click)="menu()" class="hamburger">
+    <button (click)="menu()" type="button" aria-label="Navigation menu toggle" class="hamburger">
       <div class="patty top"></div>
       <div class="patty bottom"></div>
-    </div>
+    </button>
   </div>
 
   <div class="link-container collapse">
-    <div (click)="menu()" class="link-text" [routerLink]="['/home']" routerLinkActive="active">HOME</div>
+    <a (click)="menu()" class="link-text" routerLink="/home" routerLinkActive="active">HOME</a>
     <div class="header-divider"></div>
-    <div (click)="menu()" class="link-text" [routerLink]="['/portfolio']" routerLinkActive="active">PORTFOLIO</div>
+    <a (click)="menu()" class="link-text" routerLink="/portfolio" routerLinkActive="active">PORTFOLIO</a>
     <div class="header-divider"></div>
-    <div (click)="menu()" class="link-text" [routerLink]="['/contact']" routerLinkActive="active">CONTACT</div>
+    <a (click)="menu()" class="link-text" routerLink="/contact" routerLinkActive="active">CONTACT</a>
   </div>
 
 </div>

@@ -8,7 +8,8 @@ import { ScrollService } from '../../service/scroll/scroll.service';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-  categories: string[][] = [['nature','urban'], ['human', 'events', 'space'], ['motion']];
+  // categories: string[][] = [['nature','urban'], ['human', 'events', 'space'], ['motion']];
+  categories: string[][] = [['nature'],['urban'], ['human'], ['events'], ['space'], ['motion']];
   thumbnails: any = {
     nature: '1',
     urban: '1',
@@ -22,9 +23,5 @@ export class PortfolioComponent implements OnInit {
 
   ngOnInit() {
     this.scroll.scrollToTop();
-  }
-
-  categoryClick(link: string) {
-    this.router.navigateByUrl(`/${link}`);
   }
 }

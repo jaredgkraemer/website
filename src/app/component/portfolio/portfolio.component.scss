@@ -28,31 +28,27 @@
   position: relative;
   display: flex;
   width: 100%;
-  height: calc(100vw - 4rem);
+  height: $max-width-xs * 0.25;
   margin: 0 0 2rem 0;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 2px 6px $shadow;
   cursor: pointer;
 
-  @include xs {
-    height: $max-width-xs - 4rem;
-  }
-
   @include sm {
-    height: $max-width-sm - 4rem;
+    height: $max-width-sm * 0.25;
   }
 
   @include md {
-    height: ($max-width-md - 10rem) / 3;
+    height: $max-width-md * 0.25;
     margin: 0 3em 0 0;
   }
 
   @include lg {
-    height: ($max-width-lg - 10rem) / 3;
+    height: $max-width-lg * 0.25;
   }
 
   @include xl {
-    height: ($max-width-xl - 10rem) / 3;
+    height: $max-width-xl * 0.25;
   }
 
   &:last-child {
@@ -73,50 +69,19 @@
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.5rem;
+  text-indent: 0.25rem;
+  letter-spacing: 0.25rem;
   padding: 0.5rem;
-  max-width: 4em;
-  color: $gray-90;
-  mix-blend-mode: normal;
-  border-radius: 1px;
+  color: $white;
   background-color: $gray-10;
-  opacity: 1;
-  z-index: 1;
+  border-radius: 1px;
   transition: all 0.3s ease-in-out;
-
-  @include xs {
-    max-width: 6em;
-    font-size: 3rem;
-    padding: 1rem;
-    transition: all 0.3s ease-in-out;
-  }
+  z-index: 1;
 
   @include md {
-    mix-blend-mode: multiply;
-    max-width: 4em;
+    transition: all 0.3s ease-in-out;
     font-size: 2rem;
-
-    &:hover {
-      opacity: 0;
-    }
-  }
-
-  @include lg {
-    max-width: 6em;
-    font-size: 3rem;
-  }
-}
-
-.reveal-category {
-  @include md {
-    mix-blend-mode: normal;
-    transition: all 0.3s ease-in-out;
-    opacity: 0;
-    z-index: 1;
-
-    &:hover {
-      transition: all 0.3s ease-in-out;
-      opacity: 1;
-    }
+    padding: 1rem;
   }
 }
 

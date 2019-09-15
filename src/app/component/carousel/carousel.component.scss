@@ -32,11 +32,19 @@
   z-index: 2;
   font-size: 2rem;
   color: $white;
-  opacity: 0.6;
+  opacity: 0.5;
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
+  border: 0;
+  background: none;
 
   &:hover {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: none;
     transition: opacity 0.3s ease-in-out;
     opacity: 1;
   }

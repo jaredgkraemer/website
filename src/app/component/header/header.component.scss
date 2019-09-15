@@ -6,7 +6,6 @@
   top: 0;
   z-index: 3;
   width: 100%;
-  height: calc((100vw / 4) + 2.5rem);
   background-color: $white;
   transition: all 0.5s ease-in-out;
   transition: height 0.1s ease-in-out;
@@ -55,7 +54,6 @@
   width: 100%;
   padding: 0.25rem 0;
   transition: all 0.1s ease-in-out;
-  z-index: 4;
 
   @include custom(336) {
     height: 4rem;
@@ -67,6 +65,8 @@
 
 .hamburger {
   display: block;
+  border: 0;
+  background: none;
   cursor: pointer;
   padding: 0 1rem 1rem 1rem;
 
@@ -137,7 +137,8 @@
 
 .show {
   max-height: 10rem;
-  height: calc(3 * 3rem + 3px);
+  height: 147px; /* backup if browser doesn't support calc() */
+  height: calc(3 * 3rem + 3px); /* # of menu items * height + border */
   transition: all 0.4s ease-in-out;
 
   @include md {
@@ -147,6 +148,7 @@
 }
 
 .link-text {
+  color: $gray-10;
   border: none;
   margin: 0;
   padding: 1rem;
@@ -197,4 +199,8 @@
   @include md {
     display: none;
   }
+}
+
+.logo-link {
+  z-index: 4;             
 }
