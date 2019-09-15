@@ -1,9 +1,8 @@
 <div class="responsive-container portfolio">
   <div *ngFor="let row of categories; index as i" class="portfolio-row">
     <ng-container *ngFor="let category of row">
-      <div (click)="categoryClick(category)" class="portfolio-col">
+      <a [routerLink]="['/' + category]" class="portfolio-col">
         <div class="category-container">{{ category | uppercase }}</div>
-        <div class="category-container reveal-category">{{ category | uppercase }}</div>
         <img *ngIf="category === 'nature'" class="category" src="../../assets/images/{{ category }}/{{ thumbnails.nature }}.jpg" />
         <img *ngIf="category === 'urban'" class="category" src="../../assets/images/{{ category }}/{{ thumbnails.urban }}.jpg" />
         <img *ngIf="category === 'human'" class="category" src="../../assets/images/{{ category }}/{{ thumbnails.human }}.jpg" />
@@ -12,7 +11,7 @@
         <video *ngIf="category === 'motion'" class="video" autoplay loop muted playsinline>
           <source src="../../assets/images/{{ category }}/{{ thumbnails.motion }}.mp4" type="video/mp4">
         </video>
-      </div>
+      </a>
     </ng-container>
   </div>
 </div>

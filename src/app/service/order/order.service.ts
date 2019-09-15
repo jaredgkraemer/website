@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { nature, urban, human, events, space } from '../../model/image-list';
+import { nature, urban, human, events, space, Picture } from '../../model/image-list';
 
 @Injectable()
 export class OrderService {
@@ -7,7 +7,7 @@ export class OrderService {
 
   getOrder(route: string): any[][] {
     const album: any[][] = [[]];
-    let order: string[][] = [[]];
+    let order: Picture[][] = [[]];
     let counter = 0;
 
     switch (route) {
@@ -31,11 +31,12 @@ export class OrderService {
     for (let i = 0; i < order.length; i++) {
       album[i] = [];
       for (let j = 0; j < order[i].length; j++) {
-        const src = '../../assets/images' + route + '/' + order[i][j] + '.jpg';
+        const src = '../../assets/images' + route + '/' + order[i][j].name + '.jpg';
 
         const image = {
           src: src,
-          index: counter
+          index: counter,
+          caption: order[i][j].desc
         };
 
         album[i][j] = image;

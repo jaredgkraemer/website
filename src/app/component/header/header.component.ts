@@ -4,11 +4,11 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit, AfterViewInit {
   hamburger: Element;
-  links: Element;
+  linkContainer: Element;
   width: number = 0;
   @Input() isHome: boolean;
 
@@ -18,12 +18,12 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     this.hamburger = document.querySelector('.hamburger');
-    this.links = document.querySelector('.link-container');
+    this.linkContainer = document.querySelector('.link-container');
   }
 
   menu() {
     this.hamburger.classList.toggle('toggle');
-    this.links.classList.toggle('show');
+    this.linkContainer.classList.toggle('show');
   }
 
   home() {
@@ -34,7 +34,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   onWindowResize(event) {
     this.width = event.target.innerWidth;
     if (this.width > 768 && this.hamburger.classList.contains('toggle')) {
-      this.menu();
+      this.menu(); /* close menu if open and window width expands */
     }
   }
 }
