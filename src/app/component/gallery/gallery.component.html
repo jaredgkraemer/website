@@ -1,5 +1,5 @@
 <div *ngFor="let row of album2D" class="gallery-row">
   <div *ngFor="let img of row" class="gallery-col">
-    <img src="{{ img.src }}" alt="{{ img.caption }}" (click)="open(img.index)" />
+    <img src="{{ img.src }}" alt="{{ img.caption }}. Taken by photographer Jared G Kraemer." (click)="open(img.index)" />
   </div>
 </div>
