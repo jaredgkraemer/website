@@ -89,4 +89,12 @@ export const u: Picture[] = [
     name: '21',
     desc: 'Arial view down 5th Ave - New York City, New York',
   },
+  {
+    name: '22',
+    desc: 'Lincoln Memorial at night - Washington, D.C.',
+  },
+  {
+    name: '23',
+    desc: 'Golden Gate Bridge at night - San Francisco, California',
+  },
 ];
