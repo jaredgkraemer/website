@@ -7,7 +7,7 @@ export const h: Picture[] = [
   },
   {
     name: '1',
-    desc: 'Model in middle of a bright green wheat field - Giverny,France',
+    desc: 'Model in middle of a bright green wheat field - Giverny, France',
   },
   {
     name: '2',

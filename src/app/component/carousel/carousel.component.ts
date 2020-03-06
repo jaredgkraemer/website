@@ -1,4 +1,6 @@
 import { Component, OnInit, HostListener, AfterViewInit } from '@angular/core';
+import { Picture } from '../../model/image-list';
+import { home } from '../../model/image-info/home';
 
 @Component({
   selector: 'carousel',
@@ -7,7 +9,8 @@ import { Component, OnInit, HostListener, AfterViewInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit, AfterViewInit {
   /* List of picture filenames, have to duplicate first and last to wrap around */
-  images: string[] = ['6', '1', '3', '7', '4', '2', '5', '6', '1'];
+  images: Picture[] = [home[6], home[1], home[3], home[7], home[4], home[2], home[5], home[6], home[1]];
+
   indicators: NodeListOf<HTMLElement>;
   carousel: HTMLElement;
   timer: NodeJS.Timer;

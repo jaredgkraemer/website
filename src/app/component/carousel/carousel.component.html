@@ -9,6 +9,6 @@
     <div *ngFor="let img of images; index as i" (click)="indicatorClick(i)" class="index"></div>
   </div>
   <div class="carousel" (transitionend)="transitionEnd()">
-    <img *ngFor="let img of images; index as i" class="slide" src="../../../assets/images/home/{{ images[i] }}-16x9.jpg" />
+    <img *ngFor="let img of images" class="slide" src="../../../assets/images/home/{{ img.name }}-16x9.jpg" alt="{{ img.desc }}. Taken by photographer Jared G Kraemer."/>
   </div>
 </div>

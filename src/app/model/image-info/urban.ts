@@ -27,7 +27,7 @@ export const u: Picture[] = [
   },
   {
     name: '6',
-    desc: 'Lower Manhattan skyline by the Hudson River - Ney York City, New York',
+    desc: 'Lower Manhattan skyline by the Hudson River - New York City, New York',
   },
   {
     name: '7',
@@ -55,7 +55,7 @@ export const u: Picture[] = [
   },
   {
     name: '13',
-    desc: 'My feet hanging out of a helicopter over Manhattan - Ney York City, New York',
+    desc: 'My feet hanging out of a helicopter over Manhattan - New York City, New York',
   },
   {
     name: '14',
@@ -88,5 +88,13 @@ export const u: Picture[] = [
   {
     name: '21',
     desc: 'Arial view down 5th Ave - New York City, New York',
+  },
+  {
+    name: '22',
+    desc: 'Lincoln Memorial at night - Washington, D.C.',
+  },
+  {
+    name: '23',
+    desc: 'Golden Gate Bridge at night - San Francisco, California',
   },
 ];
