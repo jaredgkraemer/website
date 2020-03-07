@@ -5,7 +5,7 @@
   "scripts": {
     "start": "ng serve",
     "build": "ng build --prod --buildOptimizer --deleteOutputPath",
-    "deploy": "npm run build && gzip-all \"dist/*.{css,js,html}\" && ./deploy.sh jaredgkraemer.com",
+    "deploy": "npm run build && gzip-all \"dist/*.{css,js,html}\" && bash ./deploy.sh jaredgkraemer.com",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
