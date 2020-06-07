@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router } from '@angular/router';
 import { Lightbox } from 'ngx-lightbox';
 import { OrderService } from '../../service/order/order.service';
 

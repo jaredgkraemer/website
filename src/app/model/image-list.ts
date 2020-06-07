@@ -28,6 +28,7 @@ export const nature: Picture[][] = [
 ];
 
 export const urban: Picture[][] = [
+  [u['24'], u['25']],
   [u['6']],
   [u['1'], u['23']],
   [u['20']],
@@ -41,6 +42,7 @@ export const urban: Picture[][] = [
 ];
 
 export const human: Picture[][] = [
+  [h['15'], h['16'], h['17']],
   [h['2']],
   [h['1'], h['3']],
   [h['11']],

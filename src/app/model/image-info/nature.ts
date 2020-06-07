@@ -59,7 +59,7 @@ export const n: Picture[] = [
   },
   {
     name: '14',
-    desc: 'Arial view of the Rocky Mountain Range - Colorado',
+    desc: 'Aerial view of the Rocky Mountain Range - Colorado',
   },
   {
     name: '15',
@@ -139,7 +139,7 @@ export const n: Picture[] = [
   },
   {
     name: '34',
-    desc: 'Arial view of Swiss Alps - Switzerland',
+    desc: 'Aerial view of Swiss Alps - Switzerland',
   },
   {
     name: '35',

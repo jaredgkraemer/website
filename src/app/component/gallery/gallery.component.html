@@ -1,4 +1,7 @@
 <div *ngFor="let row of album2D" class="gallery-row">
+  <div *ngIf="row.length === 0" class="gallery-divider-container">
+    <div class="gallery-divider"></div>
+  </div>
   <div *ngFor="let img of row" class="gallery-col">
     <img src="{{ img.src }}" alt="{{ img.caption }}. Taken by photographer Jared G Kraemer." (click)="open(img.index)" />
   </div>

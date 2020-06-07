@@ -31,7 +31,7 @@ export const e: Picture[] = [
   },
   {
     name: '7',
-    desc: 'Gradutation',
+    desc: 'Graduation',
   },
   {
     name: '8',
@@ -39,7 +39,7 @@ export const e: Picture[] = [
   },
   {
     name: '9',
-    desc: 'Gradutation',
+    desc: 'Graduation',
   },
   {
     name: '10',
@@ -56,5 +56,5 @@ export const e: Picture[] = [
   {
     name: '13',
     desc: 'Wedding',
-  },
+  }
 ];
