@@ -56,5 +56,5 @@ export const e: Picture[] = [
   {
     name: '13',
     desc: 'Wedding',
-  }
+  },
 ];
