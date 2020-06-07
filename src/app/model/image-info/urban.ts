@@ -87,7 +87,7 @@ export const u: Picture[] = [
   },
   {
     name: '21',
-    desc: 'Arial view down 5th Ave - New York City, New York',
+    desc: 'Aerial view down 5th Ave - New York City, New York',
   },
   {
     name: '22',
@@ -96,5 +96,13 @@ export const u: Picture[] = [
   {
     name: '23',
     desc: 'Golden Gate Bridge at night - San Francisco, California',
+  },
+  {
+    name: '24',
+    desc: 'Lafayette Square and the White House behind chain link fence - Washington, D.C.',
+  },
+  {
+    name: '25',
+    desc: 'Lafayette Square building in the midst of protest (All faces are blurred for privacy unless permission was granted) - Washington, D.C.',
   },
 ];

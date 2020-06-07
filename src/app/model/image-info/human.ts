@@ -61,4 +61,16 @@ export const h: Picture[] = [
     name: '14',
     desc: 'Model playing flag football - Tallahassee, Florida',
   },
+  {
+    name: '15',
+    desc: 'Protesters supporting equal rights in front of the White House (All faces are blurred for privacy unless permission was granted) - Washington, D.C.',
+  },
+  {
+    name: '16',
+    desc: 'Protesters supporting equal rights on Black Lives Matter Plaza (All faces are blurred for privacy unless permission was granted) - Washington, D.C.',
+  },
+  {
+    name: '17',
+    desc: 'Protesters supporting equal rights on Black Lives Matter Plaza (All faces are blurred for privacy unless permission was granted) - Washington, D.C.'
+  },
 ];
