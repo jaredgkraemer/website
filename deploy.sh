@@ -5,7 +5,7 @@ if [[ "$1" != "" ]]; then
     printf "\n***** DEPLOY SCRIPT BEGIN *****\n"
     printf "Deploying S3 Bucket: ${S3_NAME}\n"
 else
-    printf "ERROR: Please give S3 bucket name as argument"
+    printf "ERROR: Please give S3 bucket name as argument\n"
     exit 1
 fi
 
@@ -37,4 +37,4 @@ aws s3 cp dist/index.html s3://${S3_NAME}/index.html --metadata-directive REPLAC
 printf "\nS3 sync assets ...\n"
 aws s3 sync dist/assets s3://${S3_NAME}/assets --metadata-directive REPLACE || { printf 'ERROR: Failed to copy "assets" to S3'; }
 
-printf "\n***** DEPLOY SCRIPT END *****"
+printf "\n***** DEPLOY SCRIPT END *****\n"
