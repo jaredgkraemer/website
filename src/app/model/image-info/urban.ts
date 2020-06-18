@@ -105,4 +105,8 @@ export const u: Picture[] = [
     name: '25',
     desc: 'Lafayette Square building in the midst of protest (All faces are blurred for privacy unless permission was granted) - Washington, D.C.',
   },
+  {
+    name: '26',
+    desc: 'Sunset on cranes - Arlington, Virginia',
+  },
 ];
