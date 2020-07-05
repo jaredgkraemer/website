@@ -109,4 +109,8 @@ export const u: Picture[] = [
     name: '26',
     desc: 'Sunset on cranes - Arlington, Virginia',
   },
+  {
+    name: '27',
+    desc: 'Fireworks over the Washington Monument on 4th of July - Washington, D.C.',
+  }
 ];
