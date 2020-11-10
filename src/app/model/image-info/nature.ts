@@ -143,7 +143,7 @@ export const n: Picture[] = [
   },
   {
     name: '35',
-    desc: '',
+    desc: 'Sunrise over the Potomac River - Arlington, Virginia',
   },
   {
     name: '36',

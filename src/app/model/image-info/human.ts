@@ -73,4 +73,12 @@ export const h: Picture[] = [
     name: '17',
     desc: 'Protesters supporting equal rights on Black Lives Matter Plaza (All faces are blurred for privacy unless permission was granted) - Washington, D.C.'
   },
+  {
+    name: '18',
+    desc: 'National Mall lawn after the 2020 presidential election winner announcement - Washington, D.C.'
+  },
+  {
+    name: '19',
+    desc: 'Model in the studio - Atlanta, Georgia'
+  },
 ];
