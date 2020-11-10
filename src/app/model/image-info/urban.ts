@@ -103,7 +103,7 @@ export const u: Picture[] = [
   },
   {
     name: '25',
-    desc: 'Lafayette Square building in the midst of protest (All faces are blurred for privacy unless permission was granted) - Washington, D.C.',
+    desc: 'The White House after the 2020 presidential election winner announcement- Washington, D.C.',
   },
   {
     name: '26',
@@ -119,6 +119,14 @@ export const u: Picture[] = [
   },
   {
     name: '29',
-    desc: 'Moon and Mars over the National Mall - Washington, D.C.',
-  }
+    desc: 'Moon and Mars over the National Mall - Arlington, Virginia',
+  },
+  {
+    name: '30',
+    desc: 'Theodore Roosevelt Island at night - Washington, D.C.'
+  },
+  {
+    name: '31',
+    desc: 'Sunrise over the National Mall - Arlington, Virginia'
+  },
 ];
