@@ -16,7 +16,7 @@ export class PortfolioComponent implements OnInit {
     human: '2',
     events: '4',
     motion: '1',
-    space: '28',
+    space: '1',
   };
 
   constructor(public router: Router, public scroll: ScrollService) {}
