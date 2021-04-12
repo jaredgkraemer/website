@@ -67,7 +67,7 @@ export const u: Picture[] = [
   },
   {
     name: '16',
-    desc: '',
+    desc: 'Lightning strike in Washington, D.C. on 4th of July - Arlington, Virginia',
   },
   {
     name: '17',
@@ -128,5 +128,17 @@ export const u: Picture[] = [
   {
     name: '31',
     desc: 'Sunrise over the National Mall - Arlington, Virginia'
+  },
+  {
+    name: '32',
+    desc: 'Lincoln Memorial and Washington Monument across the Potomac at sunset - Arlington, Virginia'
+  },
+  {
+    name: '33',
+    desc: 'Lincoln Memorial and Washington Monument across the Potomac at night - Arlington, Virginia'
+  },
+  {
+    name: '34',
+    desc: 'Lincoln Memorial and Washington Monument across the Potomac at night - Arlington, Virginia'
   },
 ];
