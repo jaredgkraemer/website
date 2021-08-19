@@ -11,7 +11,7 @@ export const s: Picture[] = [
   },
   {
     name: '2',
-    desc: 'Andromeda Galaxy - Shenandoah National Park, Virginia',
+    desc: 'M31 Andromeda Galaxy - Shenandoah National Park, Virginia',
   },
   {
     name: '3',
@@ -37,4 +37,16 @@ export const s: Picture[] = [
     name: '8',
     desc: 'Milky Way - Richmond, Virginia',
   },
+  {
+    name: '9',
+    desc: 'Milky Way core barely rising over light pollution - Everglades, Florida',
+  },
+  {
+    name: '10',
+    desc: 'M42 Orion Nebula and Horsehead Nebula - Naples, Florida',
+  },
+  {
+    name: '11',
+    desc: 'M101 Pinwheel Galaxy - Everglades, Florida',
+  }
 ];

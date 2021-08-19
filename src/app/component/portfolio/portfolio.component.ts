@@ -9,7 +9,7 @@ import { ScrollService } from '../../service/scroll/scroll.service';
 })
 export class PortfolioComponent implements OnInit {
   // categories: string[][] = [['nature','urban'], ['human', 'events', 'space'], ['motion']];
-  categories: string[][] = [['nature'],['urban'], ['human'], ['events'], ['space'], ['motion']];
+  categories: string[][] = [['nature'],['urban'], ['human'], ['space'], ['events'], ['motion']];
   thumbnails: any = {
     nature: '1',
     urban: '1',
