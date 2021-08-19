@@ -141,4 +141,8 @@ export const u: Picture[] = [
     name: '34',
     desc: 'Lincoln Memorial and Washington Monument across the Potomac at night - Arlington, Virginia'
   },
+  {
+    name: '35',
+    desc: 'Downtown at dusk - Tampa, Florida'
+  },
 ];
