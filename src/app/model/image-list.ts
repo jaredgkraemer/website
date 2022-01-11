@@ -31,7 +31,7 @@ export const nature: Picture[][] = [
 export const urban: Picture[][] = [
   [u['6']],
   [u['26'], u['27'], u['22']],
-  [u['33']],
+  [u['33'], u['36']],
   [u['32'], u['35'], u['34']],
   [u['30'], u['23']],
   [u['16']],
