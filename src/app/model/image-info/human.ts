@@ -81,4 +81,8 @@ export const h: Picture[] = [
     name: '19',
     desc: 'Model in the studio - Atlanta, Georgia'
   },
+  {
+    name: '20',
+    desc: 'Model on a rocky beach - Seattle, Washington'
+  },
 ];

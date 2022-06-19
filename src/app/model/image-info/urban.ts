@@ -149,4 +149,12 @@ export const u: Picture[] = [
     name: '36',
     desc: 'Downtown at night - Tampa, Florida'
   },
+  {
+    name: '37',
+    desc: 'Moon and plane over the Space Needle during golden hour - Seattle, Washington'
+  },
+  {
+    name: '38',
+    desc: 'Panorama of downtown Seattle and Elliott Bay - Seattle, Washington'
+  },
 ];
