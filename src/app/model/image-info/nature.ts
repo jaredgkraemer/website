@@ -151,6 +151,55 @@ export const n: Picture[] = [
   },
   {
     name: '37',
-    desc: 'Storm front over downtown - Tampa, Florida',
+    desc: 'A royal tern flies across a sunset-lit storm front over downtown Tampa as seen from Bayshore Boulevard - Tampa, Florida',
   },
+  {
+    name: '38',
+    desc: 'Lava spewing from the Fagradalsfjall Volcano - Reykjanes Peninsula, Iceland',
+  },
+  {
+    name: '39',
+    desc: 'Lava from the Fagradalsfjall Volcano reflects off the clouds with the Aurora Borealis peaking through - Reykjanes Peninsula, Iceland',
+  },
+  {
+    name: '40',
+    desc: 'Aurora Borealis dances across the sky as lava from the Fagradalsfjall Volcano reflects off the clouds - Reykjanes Peninsula, Iceland',
+  },
+  {
+    name: '41',
+    desc: 'Sun lit horse grazes in a field in front of the Mýrdalsjökull icecap- Rangárþing eystra, Iceland',
+  },
+  {
+    name: '42',
+    desc: 'Mountain off the southern coast - Rangárþing eystra, Iceland',
+  },
+  {
+    name: '43',
+    desc: 'The Endless Black Beach with Mt. Pétursey in the distance - Dyrhólavegur, Iceland',
+  },
+  {
+    name: '44',
+    desc: 'Cattle graze in front of Mt. Pétursey at golden hour - Dyrhólavegur, Iceland',
+  },
+  {
+    name: '45',
+    desc: 'Outlet glacier Sólheimajökull from the icecap of Mýrdalsjökull - Sólheimajökull, Iceland',
+  },
+  {
+    name: '46',
+    desc: 'Smoke from the Fagradalsfjall Volcano is lit by the lava flowing below - Reykjanes Peninsula, Iceland',
+  },
+  {
+    name: '47',
+    desc: 'The Aurora Borealis - Reykjanes Peninsula, Iceland',
+  },
+  {
+    name: '48',
+    desc: 'The Aurora Borealis over the mountain containing the Fagradalsfjall Volcano - Reykjanes Peninsula, Iceland',
+  },
+  {
+    name: '49',
+    desc: 'The Big Dipper hovers over a hiker trekking to Fagradalsfjall Volcano at sunrise - Reykjanes Peninsula, Iceland',
+  },
+
 ];
