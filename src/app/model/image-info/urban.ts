@@ -15,7 +15,7 @@ export const u: Picture[] = [
   },
   {
     name: '3',
-    desc: '',
+    desc: 'Moon and plane over the Space Needle during golden hour - Seattle, Washington',
   },
   {
     name: '4',
@@ -31,7 +31,7 @@ export const u: Picture[] = [
   },
   {
     name: '7',
-    desc: 'Motel with harsh shadows - Tallahassee, Florida',
+    desc: 'Downtown reflections off Seddon Channel at night - Tampa, Florida',
   },
   {
     name: '8',
@@ -39,11 +39,11 @@ export const u: Picture[] = [
   },
   {
     name: '9',
-    desc: 'Frederik\'s Church - Copenhagen, Denmark',
+    desc: 'Downtown at dusk - Tampa, Florida',
   },
   {
     name: '10',
-    desc: 'Macro shot of American flag in the wind - Tampa, Florida',
+    desc: 'Lincoln Memorial and Washington Monument across the Potomac at night - Arlington, Virginia',
   },
   {
     name: '11',
@@ -63,7 +63,7 @@ export const u: Picture[] = [
   },
   {
     name: '15',
-    desc: 'Mont Saint Michel at low tide - Normandy, France',
+    desc: 'Panorama of downtown Seattle and Elliott Bay - Seattle, Washington',
   },
   {
     name: '16',
@@ -136,25 +136,5 @@ export const u: Picture[] = [
   {
     name: '33',
     desc: 'Lincoln Memorial and Washington Monument across the Potomac at night - Arlington, Virginia'
-  },
-  {
-    name: '34',
-    desc: 'Lincoln Memorial and Washington Monument across the Potomac at night - Arlington, Virginia'
-  },
-  {
-    name: '35',
-    desc: 'Downtown at dusk - Tampa, Florida'
-  },
-  {
-    name: '36',
-    desc: 'Downtown at night - Tampa, Florida'
-  },
-  {
-    name: '37',
-    desc: 'Moon and plane over the Space Needle during golden hour - Seattle, Washington'
-  },
-  {
-    name: '38',
-    desc: 'Panorama of downtown Seattle and Elliott Bay - Seattle, Washington'
   },
 ];

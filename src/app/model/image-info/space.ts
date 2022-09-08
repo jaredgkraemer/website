@@ -11,7 +11,7 @@ export const s: Picture[] = [
   },
   {
     name: '2',
-    desc: 'M31 Andromeda Galaxy - Shenandoah National Park, Virginia',
+    desc: 'Starry sky over Gulf of Mexico - Naples, Florida',
   },
   {
     name: '3',
@@ -48,5 +48,9 @@ export const s: Picture[] = [
   {
     name: '11',
     desc: 'M101 Pinwheel Galaxy - Everglades, Florida',
-  }
+  },
+  {
+    name: '12',
+    desc: 'Milky Way - Great Smoky Mountain National Park, North Carolina',
+  },
 ];

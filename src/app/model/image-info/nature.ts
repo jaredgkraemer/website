@@ -35,7 +35,7 @@ export const n: Picture[] = [
   },
   {
     name: '8',
-    desc: '',
+    desc: 'A royal tern flies across a sunset-lit storm front over downtown Tampa as seen from Bayshore Boulevard - Tampa, Florida',
   },
   {
     name: '9',
@@ -47,7 +47,7 @@ export const n: Picture[] = [
   },
   {
     name: '11',
-    desc: '',
+    desc: 'Spiny orb weaver spider on a web - Tampa, Florida',
   },
   {
     name: '12',
@@ -79,15 +79,15 @@ export const n: Picture[] = [
   },
   {
     name: '19',
-    desc: 'Spiny orb weaver spider on a web - Tampa, Florida',
+    desc: 'Purple orange sunset in the clouds - Los Angeles, California',
   },
   {
     name: '20',
-    desc: '',
+    desc: 'Intricate rock texture - Great Smoky Mountain National Park, North Carolina',
   },
   {
     name: '21',
-    desc: 'Sun setting on Clearwater Beach - Clearwater, Florida',
+    desc: 'Panorama of a swarming flock of birds over the James River - Richmond, Virginia',
   },
   {
     name: '22',
@@ -99,59 +99,59 @@ export const n: Picture[] = [
   },
   {
     name: '24',
-    desc: '',
-  },
-  {
-    name: '25',
-    desc: 'Panorama of a swarming flock of birds over the James River - Richmond, Virginia',
-  },
-  {
-    name: '26',
-    desc: '',
-  },
-  {
-    name: '27',
-    desc: '',
-  },
-  {
-    name: '28',
-    desc: '',
-  },
-  {
-    name: '29',
-    desc: 'Intricate rock texture - Great Smoky Mountain National Park, North Carolina',
-  },
-  {
-    name: '30',
     desc: 'Hiking trail - Great Smoky Mountain National Park, North Carolina',
   },
   {
-    name: '31',
+    name: '25',
     desc: 'Storm clouds above rolling hills - Great Smoky Mountain National Park, North Carolina',
   },
   {
-    name: '32',
+    name: '26',
     desc: 'Palm tree hanging over a sunny beach landscape - Tambor Beach, Costa Rica',
   },
   {
-    name: '33',
+    name: '27',
     desc: 'Arenal Volcano partially hidden behind low clouds painted in golden orange light - Arenal, Costa Rica',
   },
   {
-    name: '34',
+    name: '28',
     desc: 'Aerial view of Swiss Alps - Switzerland',
   },
   {
-    name: '35',
+    name: '29',
     desc: 'Sunrise over the Potomac River - Arlington, Virginia',
   },
   {
+    name: '30',
+    desc: 'The Big Dipper hovers over a hiker trekking to Fagradalsfjall Volcano at sunrise - Reykjanes Peninsula, Iceland',
+  },
+  {
+    name: '31',
+    desc: 'The Aurora Borealis over the mountain containing the Fagradalsfjall Volcano - Reykjanes Peninsula, Iceland',
+  },
+  {
+    name: '32',
+    desc: 'The Aurora Borealis - Reykjanes Peninsula, Iceland',
+  },
+  {
+    name: '33',
+    desc: 'Smoke from the Fagradalsfjall Volcano is lit by the lava flowing below - Reykjanes Peninsula, Iceland',
+  },
+  {
+    name: '34',
+    desc: 'Outlet glacier Sólheimajökull from the icecap of Mýrdalsjökull - Sólheimajökull, Iceland',
+  },
+  {
+    name: '35',
+    desc: 'Cattle graze in front of Mt. Pétursey at golden hour - Dyrhólavegur, Iceland',
+  },
+  {
     name: '36',
-    desc: 'Purple orange sunset in the clouds - Los Angeles, California',
+    desc: 'The Endless Black Beach with Mt. Pétursey in the distance - Dyrhólavegur, Iceland',
   },
   {
     name: '37',
-    desc: 'A royal tern flies across a sunset-lit storm front over downtown Tampa as seen from Bayshore Boulevard - Tampa, Florida',
+    desc: 'Mountain off the southern coast - Rangárþing eystra, Iceland',
   },
   {
     name: '38',
@@ -169,37 +169,4 @@ export const n: Picture[] = [
     name: '41',
     desc: 'Sun lit horse grazes in a field in front of the Mýrdalsjökull icecap- Rangárþing eystra, Iceland',
   },
-  {
-    name: '42',
-    desc: 'Mountain off the southern coast - Rangárþing eystra, Iceland',
-  },
-  {
-    name: '43',
-    desc: 'The Endless Black Beach with Mt. Pétursey in the distance - Dyrhólavegur, Iceland',
-  },
-  {
-    name: '44',
-    desc: 'Cattle graze in front of Mt. Pétursey at golden hour - Dyrhólavegur, Iceland',
-  },
-  {
-    name: '45',
-    desc: 'Outlet glacier Sólheimajökull from the icecap of Mýrdalsjökull - Sólheimajökull, Iceland',
-  },
-  {
-    name: '46',
-    desc: 'Smoke from the Fagradalsfjall Volcano is lit by the lava flowing below - Reykjanes Peninsula, Iceland',
-  },
-  {
-    name: '47',
-    desc: 'The Aurora Borealis - Reykjanes Peninsula, Iceland',
-  },
-  {
-    name: '48',
-    desc: 'The Aurora Borealis over the mountain containing the Fagradalsfjall Volcano - Reykjanes Peninsula, Iceland',
-  },
-  {
-    name: '49',
-    desc: 'The Big Dipper hovers over a hiker trekking to Fagradalsfjall Volcano at sunrise - Reykjanes Peninsula, Iceland',
-  },
-
 ];
